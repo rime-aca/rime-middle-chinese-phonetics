@@ -4,7 +4,7 @@
 schema:
   schema_id: middle_chinese_lookup
   name: 廣韻查詢
-  version: "2.2"
+  version: "2.3"
   author:
     - Polyhedron
     - 雪齋
@@ -150,7 +150,7 @@ middle_chinese_lookup:
     - xform/t\x03/nq\x03/
     - xform/p\x03/mq\x03/
     - xform/(\x01(?:th?|ch?|zs?|[dns]))r(?=[^iy'])/$1r'r/
-    - xform/(\x01(?:ph?|kh?|gh?|[bmhqjiy]|ŋ)[iy])eŋ/$1æŋ/
+    - xform/(\x01(?:ph?|kh?|gh?|[bmhqiy]|ŋ)[iy]|\x01[iy])eŋ/$1æŋ/
     - xform/j(?![iy'])/ji/
     - xform/(\x01(?:ch?|zs?|[sn])?[jl])(?=([iy]e([umn]|ŋ)?|i[imn]|yn)[dxhq]?)/$1'j/
     - xform/(\x01(?:ch?|zs?|s))(?=(?:[iy]e(?:[umn]|ŋ)?|i[imn]|yn)[dxhq]?)/$1'j/
@@ -186,32 +186,32 @@ middle_chinese_lookup:
     - xform/\x01zsr/\x01俟\x02/
     - xform/\x01zr/\x01崇\x02/
     - xform/\x01sr/\x01生\x02/
-    - xform/\x01ch(j)/\x01昌\x02/
-    - xform/\x01c(j)/\x01章\x02/
-    - xform/\x01zs(j)/\x01船\x02/
-    - xform/\x01z(j)/\x01常\x02/
-    - xform/\x01s(j)/\x01書\x02/
+    - xform/\x01chj/\x01昌\x02/
+    - xform/\x01cj/\x01章\x02/
+    - xform/\x01zsj/\x01船\x02/
+    - xform/\x01zj/\x01常\x02/
+    - xform/\x01sj/\x01書\x02/
     - xform/\x01ch/\x01清\x02/
     - xform/\x01c/\x01精\x02/
     - xform/\x01zs/\x01邪\x02/
     - xform/\x01z/\x01從\x02/
     - xform/\x01s/\x01心\x02/
-    - xform/\x01kh/\x01谿\x02/
-    - xform/\x01k/\x01見\x02/
-    - xform/\x01gh/\x01匣\x02/
-    - xform/\x01g/\x01羣\x02/
-    - xform/\x01ŋ/\x01疑\x02/
-    - xform/\x01h/\x01曉\x02/
-    - xform/\x01q/\x01影\x02/
+    - xform/\x01kh/\x01R谿\x02/
+    - xform/\x01k/\x01R見\x02/
+    - xform/\x01gh/\x01R匣\x02/
+    - xform/\x01g/\x01R羣\x02/
+    - xform/\x01ŋ/\x01R疑\x02/
+    - xform/\x01h/\x01R曉\x02/
+    - xform/\x01q/\x01R影\x02/
     - xform/\x01([iy])/\x01云\x02$1/
     - xform/\x01j/\x01以\x02/
     - xform/\x01l/\x01來\x02/
     - xform/'//
 # 壓縮聲母
-    - xform/\x01(L?)([^\x00-\x7f]{3})\x02([^\x01\x02\x03wxhq]+)([wxhq]*)\x03\s((?:\x01[^\x01\x03]+\x03\s)*)\x01\1([^\x00-\x7f]{3})\x02\3([wxhq]*)\x03\s((?:\x01[^\x01\x03]+\x03\s)*)\x01\1([^\x00-\x7f]{3})\x02\3([wxhq]*\x03)/\x01$1$2／$6／$9\x02$3$4／$7／$10 $5$8/
-    - xform/\x01(L?)([^\x00-\x7f]{3})\x02([^\x01\x02\x03wxhq]+)([wxhq]*)\x03\s((?:\x01[^\x01\x03]+\x03\s)*)\x01\1([^\x00-\x7f]{3})\x02\3([wxhq]*\x03)\s?/\x01$1$2／$6\x02$3$4／$7 $5/
-    - xform/\x01(L?)([^\x00-\x7f]{3})\x02([^\x01\x02\x03wxhq]+)([wxhq]*)\x03\s((?:\x01[^\x01\x03]+\x03\s)*)\x01\1([^\x00-\x7f]{3})\x02\3([wxhq]*\x03)\s?/\x01$1$2／$6\x02$3$4／$7 $5/
-    - xform/／+\x03/\x03/
+    - xform/\x01([LR]?)([^\x00-\x7f]{3})\x02([^\x01\x02\x03wxhq]+)([wxhq]*)\x03\s((?:\x01[^\x01\x03]+\x03\s)*)\x01\1([^\x00-\x7f]{3})\x02\3([wxhq]*)\x03\s((?:\x01[^\x01\x03]+\x03\s)*)\x01\1([^\x00-\x7f]{3})\x02\3([wxhq]*\x03)/\x01$1$2／$6／$9\x02$3$4／$7／$10 $5$8/
+    - xform/\x01([LR]?)([^\x00-\x7f]{3})\x02([^\x01\x02\x03wxhq]+)([wxhq]*)\x03\s((?:\x01[^\x01\x03]+\x03\s)*)\x01\1([^\x00-\x7f]{3})\x02\3([wxhq]*\x03)\s?/\x01$1$2／$6\x02$3$4／$7 $5/
+    - xform/\x01([LR]?)([^\x00-\x7f]{3})\x02([^\x01\x02\x03wxhq]+)([wxhq]*)\x03\s((?:\x01[^\x01\x03]+\x03\s)*)\x01\1([^\x00-\x7f]{3})\x02\3([wxhq]*\x03)\s?/\x01$1$2／$6\x02$3$4／$7 $5/
+    - xform/／\x03/\x03/
     - xform/([xhq]+)w/w$1/
     - xform/(w?)([hq]+)x/$1x$2/
     - xform/q(h)/$1q/
@@ -285,19 +285,20 @@ middle_chinese_lookup:
     - xform/\x02(i)o((?:[wxh]|／)*\x03)/\x02$1魚$2/
     - xform/\x02(y)o((?:[wxh]|／)*\x03)/\x02$1虞$2/
     - xform/\x02o((?:[wxh]|／)*\x03)/\x02模$1/
-# 處理等、聲調
+# 處理介音、聲調
     - xform/d/h/
     - xform/(\x01[^\x01\x03wxhq]+)([whxq]+)((?:／[whxq]+)*)\x03/$1】$2$3/
 #
-    - xform/\x01(L?)((?:[^\x00-\x7f]{3}|／)+)\x02(j?ɨ)([iy])(o?)([^\x00-\x7f]{3})/〖$2〗重紐$3等\x01$1$5$4\x03【$6/
+    - xform/\x01([LR])((?:[^\x00-\x7f]{3}|／)+)\x02(j?ɨ)([iy])(o?)([^\x00-\x7f]{3})/〖$2〗重紐$3等\x01$1$5$4\x03【$6/
+    - xform/R//
     - xform/\x01(L?)((?:[^\x00-\x7f]{3}|／)+)\x02(u?)e(o?)([^\x00-\x7f]{3})/〖$2〗四等\x01$1$4$3\x03【$5/
     - xform/\x01(L?)((?:[^\x00-\x7f]{3}|／)+)\x02r(u?)(o?)([^\x00-\x7f]{3})/〖$2〗二等\x01$1$4$3\x03【$5/
-    - xform/\x01(L?)((?:[^\x00-\x7f]{3}|／)+)\x02r?([iy])(o?)([^\x00-\x7f]{3})/〖$2〗三等\x01$1$4$3\x03【$5/
+    - xform/\x01(L?)((?:[^\x00-\x7f]{3}|／)+)\x02(?:r|j?ɨ)?([iy])(o?)([^\x00-\x7f]{3})/〖$2〗三等\x01$1$4$3\x03【$5/
     - xform/\x01(L?)((?:[^\x00-\x7f]{3}|／)+)\x02(u?)(o?)([^\x00-\x7f]{3})/〖$2〗一等\x01$1$4$3\x03【$5/
     - xform/jɨ/四/
     - xform/ɨ/三/
-    - xform/\x01(?!L)o[uy]\x03/合/
-    - xform/\x01(?!L)oi?\x03/開/
+    - xform/\x01(?!L)o?[uy]\x03/合/
+    - xform/\x01(?!L)o?i?\x03/開/
     - xform/\x01L?[a-z]*\x03//
 # 壓縮韻母
     - xform/(\s|^)([^\s]+)【([^\x00-\x7f]{3})】([wxhq]+)\s((?:[^\s]+\s)*)\2【([^\x00-\x7f]{3})】([wxhq]+)(\s|$)/$1$2【$3／$6】$4／$7 $5$8/
