@@ -4,7 +4,7 @@
 schema:
   schema_id: middle_chinese_lookup
   name: 廣韻查詢
-  version: "4.1"
+  version: "4.2"
   author:
     - Polyhedron
     - 雪齋
@@ -40,9 +40,9 @@ schema:
     介音壓縮後(10)：
     　烏 一四等
     娃蛙 二等
-    依於 三等・後元音
-    漪妖 三等・重紐三等
-    姨幽 三等・重紐四等
+    依紆 三等・後元音
+    猗妖 三等・重紐三等
+    伊幽 三等・重紐四等
 
   dependencies:
     - zyenpheng
@@ -316,16 +316,16 @@ middle_chinese_lookup:
     - xform/\x01([BKRGL]?)((?:[^\x00-\x7f]{3}|／)+)\x02(?:r|j?ɨ)?([iy])(o?)([^\x00-\x7f]{3})/〖$2〗$1三等\x01$1$4$3\x03【$5/
     - xform/\x01([BKRGL]?)((?:[^\x00-\x7f]{3}|／)+)\x02r(u?)(o?)([^\x00-\x7f]{3})/〖$2〗娃\x01$1$4$3\x03【$5/
     - xform/\x01([BKRGL]?)((?:[^\x00-\x7f]{3}|／)+)\x02(u?)e?(o?)([^\x00-\x7f]{3})/〖$2〗\x01$1$4$3\x03【$5/
-    - xform/B三等/於/
+    - xform/B三等/紆/
     - xform/[KGL]三等/依/
-    - xform/(重紐ɨ|R三等)/漪/
-    - xform/(重紐jɨ|三等)/姨/
+    - xform/(重紐ɨ|R三等)/猗/
+    - xform/(重紐jɨ|三等)/伊/
     - xform/[KGRL]//
     - xform/\x01(?!B)o[uy]\x03/烏/
     - xform/娃烏/蛙/
-    - xform/依烏/於/
-    - xform/漪烏/妖/
-    - xform/姨烏/幽/
+    - xform/依烏/紆/
+    - xform/猗烏/妖/
+    - xform/伊烏/幽/
     - xform/\x01B?[a-z]*\x03//
 # 壓縮聲母、韻母
     - xform/(\s|^)〖([^\x00-\x7f]{3})〗([^\x00-\x7f]*)【([^\x00-\x7f]{3})】([wxhq]+)\s((?:[^\s]+\s)*)〖\2〗([^\x00-\x7f]*)【([^\x00-\x7f]{3})】([wxhq]+)\s((?:[^\s]+\s)*)〖\2〗([^\x00-\x7f]*)【([^\x00-\x7f]{3})】([wxhq]+)(\s|$)/$1〖$2〗\x01$3／$7／$11\x03【\x01$4／$8／$12\x03】\x01$5／$9／$13\x03 $6$10$14/
