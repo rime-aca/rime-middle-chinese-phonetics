@@ -59,15 +59,15 @@
 <table><tr>
 	<th></th><th>開</th><th>合</th>
 </tr><tr>
-	<th>一四等</th><td></td><td>合</td>
+	<th>一四等</th><td></td><td>烏</td>
 </tr><tr>
-	<th>二等</th><td>櫻</td><td>泓</td>
+	<th>二等</th><td>娃</td><td>蛙</td>
 </tr><tr>
-	<th>鈍音三等</th><td>漪</td><td>逶</td>
+	<th>鈍音三等</th><td>漪</td><td>妖</td>
 </tr><tr>
-	<th>其它三等</th><td>依</td><td>威</td>
+	<th>其它三等</th><td>依</td><td>於</td>
 </tr><tr>
-	<th>銳音三等</th><td>瓔</td><td>縈</td>
+	<th>銳音三等</th><td>姨</td><td>幽</td>
 </tr>
 </table></li>
 </ol>
