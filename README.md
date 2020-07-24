@@ -63,11 +63,11 @@
 </tr><tr>
 	<th>二等</th><td>娃</td><td>蛙</td>
 </tr><tr>
-	<th>鈍音三等</th><td>猗</td><td>妖</td>
+	<th>鈍音三等</th><td>漪</td><td>逶</td>
 </tr><tr>
-	<th>其它三等</th><td>依</td><td>紆</td>
+	<th>其它三等</th><td>依</td><td>威</td>
 </tr><tr>
-	<th>銳音三等</th><td>伊</td><td>幽</td>
+	<th>銳音三等</th><td>伊</td><td>惟</td>
 </tr>
 </table></li>
 </ol>
