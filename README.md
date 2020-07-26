@@ -37,22 +37,22 @@
 </table></li>
 <li><p><span>韻母</span><span>Final</span></p>
 <table><tr>
-	<th></th><th>東</th><th>冬</th><th>登</th><th>唐</th><th>青</th><th>魚</th><th>侯</th><th>支</th><th>歌</th><th>之</th><th>豪</th><th>蕭</th><th>脂</th><th>咍</th><th>泰</th><th>齊</th><th>眞</th><th>元</th><th>寒</th><th>先</th><th>侵</th><th>覃</th><th>談</th><th>添</th>
+	<th></th><th>東</th><th>冬</th><th>唐</th><th>蒸</th><th>登</th><th>清</th><th>青</th><th>模</th><th>侯</th><th>支</th><th>歌</th><th>之</th><th>豪</th><th>蕭</th><th>脂</th><th>咍</th><th>泰</th><th>齊</th><th>眞</th><th>元</th><th>寒</th><th>先</th><th>侵</th><th>覃</th><th>談</th><th>添</th>
 </tr>
 <tr>
-	<th>一四等</th><td>東</td><td>冬</td><td>登</td><td>唐</td><td>青</td><td>模</td><td>侯</td><td></td><td>歌<sub>開</sub>／戈<sub>合</sub></td><td></td><td>豪</td><td>蕭</td><td></td><td>咍<sub>開</sub>／灰<sub>合</sub></td><td>泰</td><td>齊</td><td></td><td>痕<sub>開</sub>／魂<sub>合</sub></td><td>寒<sub>開</sub>／桓<sub>合</sub></td><td>先</td><td></td><td>覃</td><td>談</td><td>添</td>
+	<th>一四等</th><td>東</td><td>冬</td><td>唐</td><td></td><td>登</td><td></td><td>青</td><td>模</td><td>侯</td><td></td><td>歌<sub>開</sub>／戈<sub>合</sub></td><td></td><td>豪</td><td>蕭</td><td></td><td>咍<sub>開</sub>／灰<sub>合</sub></td><td>泰</td><td>齊</td><td></td><td>痕<sub>開</sub>／魂<sub>合</sub></td><td>寒<sub>開</sub>／桓<sub>合</sub></td><td>先</td><td></td><td>覃</td><td>談</td><td>添</td>
 </tr>
 <tr>
-	<th>二等</th><td></td><td>江</td><td>耕</td><td></td><td>庚</td><td></td><td></td><td>佳</td><td>麻</td><td></td><td>肴</td><td></td><td></td><td></td><td>夬</td><td>皆</td><td></td><td></td><td>刪</td><td>山</td><td></td><td></td><td>銜</td><td>咸</td>
+	<th>二等</th><td></td><td>江</td><td></td><td></td><td></td><td>庚</td><td>耕</td><td></td><td></td><td>佳</td><td>麻</td><td></td><td>肴</td><td></td><td></td><td></td><td>夬</td><td>皆</td><td></td><td></td><td>刪</td><td>山</td><td></td><td></td><td>銜</td><td>咸</td>
 </tr>
 <tr>
-	<th>鈍音三等</th><td>東</td><td>鐘</td><td>蒸</td><td>陽</td><td>清<sub>知</sub>／庚<sub>脣牙喉</sub></td><td>魚<sub>開</sub>／虞<sub>合</sub></td><td>尤</td><td>支</td><td>麻</td><td>之</td><td></td><td>宵</td><td>脂</td><td></td><td></td><td>祭</td><td>眞<sub>開</sub>／諄<sub>合</sub>／臻<sub>莊</sub></td><td></td><td></td><td>仙</td><td>侵</td><td></td><td></td><td>鹽</td>
+	<th>鈍音三等</th><td>東</td><td>鐘</td><td>陽</td><td>蒸</td><td></td><td>清<sub>知</sub>／庚<sub>脣牙喉</sub></td><td></td><td>魚<sub>開</sub>／虞<sub>合</sub></td><td>尤</td><td>支</td><td>麻</td><td>之</td><td></td><td>宵</td><td>脂</td><td></td><td></td><td>祭</td><td>眞<sub>開</sub>／諄<sub>合</sub>／臻<sub>莊</sub></td><td></td><td></td><td>仙</td><td>侵</td><td></td><td></td><td>鹽</td>
 </tr>
 <tr>
-	<th>其它三等</th><td>東</td><td>鐘</td><td></td><td>陽</td><td></td><td>魚<sub>開</sub>／虞<sub>合</sub></td><td>尤</td><td></td><td></td><td>之</td><td></td><td></td><td>微</td><td></td><td></td><td>廢</td><td>欣<sub>開</sub>／文<sub>合</sub></td><td>元</td><td></td><td></td><td></td><td>嚴<sub>牙喉</sub>／凡<sub>脣</sub></td><td></td><td></td>
+	<th>其它三等</th><td>東</td><td>鐘</td><td>陽</td><td></td><td></td><td></td><td></td><td>魚<sub>開</sub>／虞<sub>合</sub></td><td>尤</td><td></td><td></td><td>之</td><td></td><td></td><td>微</td><td>廢</td><td></td><td></td><td>欣<sub>開</sub>／文<sub>合</sub></td><td>元</td><td></td><td></td><td></td><td>嚴<sub>牙喉</sub>／凡<sub>脣</sub></td><td></td><td></td>
 </tr>
 <tr>
-	<th>銳音三等</th><td>東</td><td>鐘</td><td>蒸</td><td>陽</td><td>清</td><td>魚<sub>開</sub>／虞<sub>合</sub></td><td>幽</td><td>支</td><td>麻</td><td>之</td><td></td><td>宵</td><td>脂</td><td></td><td></td><td>祭</td><td>眞<sub>開</sub>／諄<sub>合</sub></td><td></td><td></td><td>仙</td><td>侵</td><td></td><td></td><td>鹽</td>
+	<th>銳音三等</th><td>東</td><td>鐘</td><td>陽</td><td>蒸</td><td></td><td>清</td><td></td><td>魚<sub>開</sub>／虞<sub>合</sub></td><td>幽</td><td>支</td><td>麻</td><td>之</td><td></td><td>宵</td><td>脂</td><td></td><td></td><td>祭</td><td>眞<sub>開</sub>／諄<sub>合</sub></td><td></td><td></td><td>仙</td><td>侵</td><td></td><td></td><td>鹽</td>
 </tr>
 </table></li>
 <li><p><span>介音</span><span>Medial</span></p>
