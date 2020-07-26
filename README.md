@@ -15,7 +15,9 @@
 <li>三等韻介音三分，分別接後元音、重紐三等、重紐四等</li></ol>
 <li>韻母舉平以賅上去入</li>
 <li>脣音無開闔</li></ol></ul>
-<ol><li><p><span>聲母</span><span>Initial</span></p>
+<img src="middle_chinese.png" alt="Summary of syllables" style = "width: 50%; margin-left: auto;
+  margin-right: auto;">
+<ol style = "display: none;"><li><p><span>聲母</span><span>Initial</span></p>
 <table><tr>
 	<th></th><th>幫</th><th>滂</th><th>並</th><th>明</th><th>見</th><th>谿</th><th>羣</th><th>疑</th><th>影</th><th>曉</th><th>匣</th><th>端</th><th>透</th><th>定</th><th>泥</th><th>精</th><th>清</th><th>從</th><th>心</th><th>邪</th><th>章</th><th>昌</th><th>常</th><th>書</th><th>船</th><th>來</th>
 </tr>
