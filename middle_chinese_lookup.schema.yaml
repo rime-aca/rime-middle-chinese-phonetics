@@ -4,7 +4,7 @@
 schema:
   schema_id: middle_chinese_lookup
   name: 廣韻查詢
-  version: "5.1"
+  version: "5.2"
   author:
     - Polyhedron
     - 雪齋
@@ -23,12 +23,12 @@ schema:
     默認不顯示「開」
     同韻不同調等情況予以縮併顯示
 
-    聲母壓縮後(21)：
-    幫滂並明
-    見谿羣疑
-    影　　　曉匣
-    端透定泥　來
-    精清從　心邪
+    聲母壓縮後(23)：
+    幫滂並　　明
+    見谿羣　　疑
+    影曉匣
+    端透定　以泥來
+    精清從心邪日
 
     韻母壓縮後(26)：
     之脂侯眞侵蒸東
@@ -206,7 +206,7 @@ middle_chinese_lookup:
     - xform/\x01tr/\x01R端\x02/ # 知
     - xform/\x01dr/\x01R定\x02/ # 澄
     - xform/\x01nr/\x01R泥\x02/ # 孃
-    - xform/\x01nj/\x01泥\x02/ # 日
+    - xform/\x01nj/\x01J日\x02/
     - xform/\x01th/\x01透\x02/
     - xform/\x01t/\x01端\x02/
     - xform/\x01d/\x01定\x02/
@@ -234,7 +234,7 @@ middle_chinese_lookup:
     - xform/\x01h/\x01K曉\x02/
     - xform/\x01q/\x01K影\x02/
     - xform/\x01([iy])/\x01G匣\x02$1/ # 云
-    - xform/\x01j/\x01匣\x02/ # 以
+    - xform/\x01j/\x01以\x02/
     - xform/\x01l/\x01L來\x02/
     - xform/'//
 # 轉換韻母：
