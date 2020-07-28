@@ -4,7 +4,7 @@
 schema:
   schema_id: middle_chinese_lookup
   name: 廣韻查詢
-  version: "5.0"
+  version: "5.1"
   author:
     - Polyhedron
     - 雪齋
@@ -23,13 +23,12 @@ schema:
     默認不顯示「開」
     同韻不同調等情況予以縮併顯示
 
-    聲母壓縮後(26)：
+    聲母壓縮後(21)：
     幫滂並明
     見谿羣疑
-    影曉匣
+    影　　　曉匣
     端透定泥　來
-    精清從心邪
-    章昌常書船
+    精清從　心邪
 
     韻母壓縮後(26)：
     之脂侯眞侵蒸東
@@ -217,11 +216,11 @@ middle_chinese_lookup:
     - xform/\x01zsr/\x01R邪\x02/ # 俟
     - xform/\x01zr/\x01R從\x02/ # 崇
     - xform/\x01sr/\x01R心\x02/ # 生
-    - xform/\x01chj/\x01昌\x02/
-    - xform/\x01cj/\x01章\x02/
-    - xform/\x01zsj/\x01船\x02/
-    - xform/\x01zj/\x01常\x02/
-    - xform/\x01sj/\x01書\x02/
+    - xform/\x01chj/\x01J清\x02/ # 昌
+    - xform/\x01cj/\x01J精\x02/ # 章
+    - xform/\x01zsj/\x01J邪\x02/ # 船
+    - xform/\x01zj/\x01J從\x02/ # 常
+    - xform/\x01sj/\x01J心\x02/ # 書
     - xform/\x01ch/\x01清\x02/
     - xform/\x01c/\x01精\x02/
     - xform/\x01zs/\x01邪\x02/
@@ -315,15 +314,15 @@ middle_chinese_lookup:
     - xform/(\x01[^\x01\x03wxhq]+)([whxq]+)((?:／[whxq]+)*)\x03/$1\x05$2$3/
 #
     - xform/\x01([BKG])((?:[^\x00-\x7f]{3}|／)+)\x02(j?ɨ)([iy])(o?)([^\x00-\x7f]{3})/\x06$2\x07重紐$3\x01$1$5$4\x03\x04$6/
-    - xform/\x01([BKRGL]?)((?:[^\x00-\x7f]{3}|／)+)\x02(?:r|j?ɨ)?([iy])(o?)([^\x00-\x7f]{3})/\x06$2\x07$1三等\x01$1$4$3\x03\x04$5/
-    - xform/\x01([BKRGL]?)((?:[^\x00-\x7f]{3}|／)+)\x02r(u?)(o?)([^\x00-\x7f]{3})/\x06$2\x07娃\x01$1$4$3\x03\x04$5/
-    - xform/\x01([BKRGL]?)((?:[^\x00-\x7f]{3}|／)+)\x02(u?)e?(o?)([^\x00-\x7f]{3})/\x06$2\x07\x01$1$4$3\x03\x04$5/
+    - xform/\x01([BKRGLJ]?)((?:[^\x00-\x7f]{3}|／)+)\x02(?:r|j?ɨ)?([iy])(o?)([^\x00-\x7f]{3})/\x06$2\x07$1三等\x01$1$4$3\x03\x04$5/
+    - xform/\x01([BKRGLJ]?)((?:[^\x00-\x7f]{3}|／)+)\x02r(u?)(o?)([^\x00-\x7f]{3})/\x06$2\x07娃\x01$1$4$3\x03\x04$5/
+    - xform/\x01([BKRGLJ]?)((?:[^\x00-\x7f]{3}|／)+)\x02(u?)e?(o?)([^\x00-\x7f]{3})/\x06$2\x07\x01$1$4$3\x03\x04$5/
     - xform/B三等/威/
-    - xform/[KG]三等/依/
+    - xform/[KGJ]三等/依/
     - xform/(重紐ɨ|[RL]三等)/漪/
     - xform/(重紐jɨ|三等)/伊/
-    - xform/[KGRL]//
-    - xform/\x01(?!B)o[uy]\x03/烏/
+    - xform/[KGRLJ]//
+    - xform/\x01[^B]o[uy]\x03/烏/
     - xform/娃烏/蛙/
     - xform/依烏/威/
     - xform/漪烏/逶/
