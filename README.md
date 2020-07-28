@@ -31,7 +31,7 @@
 	<th>鈍音三等</th><td>幫</td><td>滂</td><td>並</td><td>明</td><td>見</td><td>谿</td><td>羣</td><td>疑</td><td>影</td><td>曉</td><td>云</td><td>知</td><td>徹</td><td>澄</td><td>孃</td><td>莊</td><td>初</td><td>崇</td><td>生</td><td>俟</td></td><td>來</td>
 </tr>
 <tr>
-	<th>其它三等</th><td>非</td><td>敷</td><td>奉</td><td>微</td><td>見</td><td>谿</td><td>羣</td><td>疑</td><td>影</td><td>曉</td><td>云</td><td></td><td></td><td></td><td></td><td>章</td><td>昌</td><td>常</td><td>書</td><td>船</td><td></td><td></td><td></td><td></td><td></td><td></td>
+	<th>其它三等</th><td>非</td><td>敷</td><td>奉</td><td>微</td><td>見</td><td>谿</td><td>羣</td><td>疑</td><td>影</td><td>曉</td><td>云</td><td></td><td></td><td></td><td></td><td>章</td><td>昌</td><td>常</td><td>書</td><td>船</td><td></td>
 </tr>
 <tr>
 	<th>尖音三等</th><td>幫</td><td>滂</td><td>並</td><td>明</td><td>見</td><td>谿</td><td>羣</td><td>疑</td><td>影</td><td>曉</td><td>以</td><td></td><td></td><td></td><td>日</td><td>精</td><td>清</td><td>從</td><td>心</td><td>邪</td><td></td>
@@ -61,7 +61,7 @@
 <table><tr>
 	<th></th><th>開</th><th>合</th>
 </tr><tr>
-	<th>一四等</th><td></td><td>烏</td>
+	<th>一四等</th><td>・</td><td>烏</td>
 </tr><tr>
 	<th>二等</th><td>娃</td><td>蛙</td>
 </tr><tr>
