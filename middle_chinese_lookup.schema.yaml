@@ -4,7 +4,7 @@
 schema:
   schema_id: middle_chinese_lookup
   name: 廣韻查詢
-  version: "5.2"
+  version: "5.3"
   author:
     - Polyhedron
     - 雪齋
@@ -23,25 +23,25 @@ schema:
     默認不顯示「開」
     同韻不同調等情況予以縮併顯示
 
-    聲母壓縮後(23)：
+    聲母壓縮後(24)：
     幫滂並　　明
     見谿羣　　疑
-    影曉匣
-    端透定　以泥來
-    精清從心邪日
+    影曉匣　以
+    端透定書船泥來
+    精清從心邪
 
     韻母壓縮後(26)：
-    之脂侯眞侵蒸東
-    模咍　元覃登冬
-    歌泰豪寒談清唐
-    支齊蕭先添青
+    之蒸侯東脂眞侵
+    支青蕭　齊先添
+    模登　冬咍元覃
+    歌清豪唐泰寒談
 
     介音壓縮後(10)：
     ・烏 一四等
     娃蛙 二等
-    依威 三等・後元音
-    漪逶 三等・重紐三等
-    伊惟 三等・重紐四等
+    漪逶 重紐三等
+    依威 無重紐三等
+    伊惟 重紐四等
 
   dependencies:
     - zyenpheng
@@ -206,7 +206,7 @@ middle_chinese_lookup:
     - xform/\x01tr/\x01R端\x02/ # 知
     - xform/\x01dr/\x01R定\x02/ # 澄
     - xform/\x01nr/\x01R泥\x02/ # 娘
-    - xform/\x01nj/\x01J日\x02/
+    - xform/\x01nj/\x01泥\x02/ # 日
     - xform/\x01th/\x01透\x02/
     - xform/\x01t/\x01端\x02/
     - xform/\x01d/\x01定\x02/
@@ -216,11 +216,11 @@ middle_chinese_lookup:
     - xform/\x01zsr/\x01R邪\x02/ # 俟
     - xform/\x01zr/\x01R從\x02/ # 崇
     - xform/\x01sr/\x01R心\x02/ # 生
-    - xform/\x01chj/\x01J清\x02/ # 昌
-    - xform/\x01cj/\x01J精\x02/ # 章
-    - xform/\x01zsj/\x01J邪\x02/ # 船
-    - xform/\x01zj/\x01J從\x02/ # 常
-    - xform/\x01sj/\x01J心\x02/ # 書
+    - xform/\x01chj/\x01透\x02/ # 昌
+    - xform/\x01cj/\x01端\x02/ # 章
+    - xform/\x01zsj/\x01船\x02/
+    - xform/\x01zj/\x01定\x02/ # 常
+    - xform/\x01sj/\x01書\x02/
     - xform/\x01ch/\x01清\x02/
     - xform/\x01c/\x01精\x02/
     - xform/\x01zs/\x01邪\x02/
