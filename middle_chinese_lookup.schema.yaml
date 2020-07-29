@@ -37,7 +37,7 @@ schema:
     支齊蕭先添青
 
     介音壓縮後(10)：
-    　烏 一四等
+    ・烏 一四等
     娃蛙 二等
     依威 三等・後元音
     漪逶 三等・重紐三等
@@ -205,7 +205,7 @@ middle_chinese_lookup:
     - xform/\x01thr/\x01R透\x02/ # 澈
     - xform/\x01tr/\x01R端\x02/ # 知
     - xform/\x01dr/\x01R定\x02/ # 澄
-    - xform/\x01nr/\x01R泥\x02/ # 孃
+    - xform/\x01nr/\x01R泥\x02/ # 娘
     - xform/\x01nj/\x01J日\x02/
     - xform/\x01th/\x01透\x02/
     - xform/\x01t/\x01端\x02/
