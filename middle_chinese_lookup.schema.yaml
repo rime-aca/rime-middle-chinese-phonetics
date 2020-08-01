@@ -37,7 +37,7 @@ schema:
     歌淸豪唐泰寒談
 
     介音壓縮後(10)：
-    ・烏 一四等
+    ・鷗 一四等
     娃蛙 二等
     漪逶 重紐三等
     依威 無重紐三等
@@ -322,11 +322,11 @@ middle_chinese_lookup:
     - xform/(重紐ɨ|[RL]三等)/漪/
     - xform/(重紐jɨ|三等)/伊/
     - xform/[KGRLJ]//
-    - xform/\x01[^B]?o[uy]\x03/烏/
-    - xform/娃烏/蛙/
-    - xform/依烏/威/
-    - xform/漪烏/逶/
-    - xform/伊烏/惟/
+    - xform/\x01[^B]?o[uy]\x03/鷗/
+    - xform/娃鷗/蛙/
+    - xform/依鷗/威/
+    - xform/漪鷗/逶/
+    - xform/伊鷗/惟/
     - xform/\x01B?[a-z]*\x03//
     - xform/\x07\x04/\x07・\x04/
 # 壓縮聲母、韻母

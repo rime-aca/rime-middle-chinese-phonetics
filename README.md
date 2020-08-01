@@ -11,7 +11,6 @@
 <li>以倉頡或普通話拼音查詢</li>
 <li>顯示格式：〖聲〗介【韻】調</li>
 <ol><li>一、四等韻無介音</li>
-<li>二等韻介音記爲「舌」</li>
 <li>三等韻介音三分，分別接後元音、重紐三等、重紐四等</li></ol>
 <li>韻母舉平以賅上去入</li>
 <li>脣音無開闔</li></ol></ul>
@@ -43,7 +42,7 @@
 </tr><tr>
 	<th>開</th><td>・</td><td>娃</td><td>漪</td><td>依</td><td>伊</td>
 </tr><tr>
-	<th>合</th><td>烏</td><td>蛙</td><td>逶</td><td>威</td><td>惟</td>
+	<th>合</th><td>鷗</td><td>蛙</td><td>逶</td><td>威</td><td>惟</td>
 </tr>
 </table></li>
 <li><p><span>韻母</span><span>Final</span></p>
