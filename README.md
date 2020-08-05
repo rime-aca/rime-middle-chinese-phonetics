@@ -1,5 +1,7 @@
 <h1>Middle Chinese Phonetics</h1>
 <h3>廣韻反查</h3>
+<p>配方： <b>℞ rime-aca/rime-middle-chinese-phonetics</b></p>
+<hr>
 <ul><ol><li> Input characters with Cangjie or Pinyin, results automatically appear.</li>
 <li> Result Format: 〖Initial〗Medial【Final】Tone</li>
 <ol><li>First and fourth Deng correspond to no medial</li>
