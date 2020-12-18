@@ -252,6 +252,7 @@ middle_chinese_lookup:
     - xform/\x02j?([iy])eŋ((?:[wxhq]|／)*\x03)/\x02jɨ$1o庚$2/ # 淸
     - xform/\x02(u?e)ŋ((?:[wxhq]|／)*\x03)/\x02$1o靑$2/
     - xform/\x02([iy])ŋ((?:[wxhq]|／)*\x03)/\x02ɨ$1o蒸$2/
+    - xform/\x02iiŋ((?:[wxhq]|／)*\x03)/\x02io蒸$1/ # 憶
     - xform/\x02(u?)oŋ((?:[wxhq]|／)*\x03)/\x02$1o登$2/
 # 眞元寒先
     - xform/\x02(j?)(y)ɿn((?:[wxhq]|／)*\x03)/\x02$1ɨ$2o眞$3/ # 諄
@@ -285,7 +286,7 @@ middle_chinese_lookup:
     - xform/\x02(e)u((?:[wxh]|／)*\x03)/\x02$1蕭$2/
     - xform/\x02(i)u((?:[wxh]|／)*\x03)/\x02$1侯$2/ # 尤
     - xform/\x02u((?:[wxh]|／)*\x03)/\x02侯$1/
-    - xform/\x02(y)((?:[wxh]|／)*\x03)/\x02jɨ$1侯$2/ # 幽
+    - xform/[RL]?((?:[^\x00-\x7f]{3}|／)+)\x02(y)((?:[wxh]|／)*\x03)/$1\x02jɨ$2侯$3/ # 幽
 # 脂咍泰齊
     - xform/\x02(j?)([iy])i((?:[wxh]|／)*\x03)/\x02$1ɨ$2o脂$3/
     - xform/\x02([iy])oi((?:[wxh]|／)*\x03)/\x02$1o脂$2/ # 微
