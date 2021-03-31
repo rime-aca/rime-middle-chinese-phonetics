@@ -19,22 +19,22 @@
 <p style="text-align:center;"><img src="middle_chinese.svg" alt="Summary of syllables" style = "width: 50%; margin-left: auto; margin-right: auto;"></p>
 <ol><li><p><span>聲母</span><span>Initial</span></p>
 <table><tr>
-	<th></th><th>幫</th><th>滂</th><th>並</th><th>明</th><th>見</th><th>谿</th><th>羣</th><th>疑</th><th>影</th><th>曉</th><th>匣</th><th>以</th><th>端</th><th>透</th><th>定</th><th>書</th><th>船</th><th>泥</th><th>來</th><th>精</th><th>淸</th><th>從</th><th>心</th><th>邪</th>
+	<th></th><th>幫</th><th>滂</th><th>並</th><th>明</th><th>見</th><th>谿</th><th>匣</th><th>疑</th><th>影</th><th>曉</th><th>于</th><th>以</th><th>端</th><th>透</th><th>定</th><th>書</th><th>泥</th><th>來</th><th>精</th><th>淸</th><th>從</th><th>心</th><th>邪</th>
 </tr>
 <tr>
-	<th>一四等</th><td>博</td><td>普</td><td>蒲</td><td>莫</td><td>古</td><td>苦</td><td></td><td>五</td><td>烏</td><td>呼</td><td>胡</td><td></td><td>都</td><td>他</td><td>徒</td><td></td><td></td><td>奴</td><td>盧</td><td>作</td><td>倉</td><td>昨</td><td>蘇</td><td></td>
+	<th>一四等</th><td>博</td><td>普</td><td>蒲</td><td>莫</td><td>古</td><td>苦</td><td>胡</td><td>五</td><td>烏</td><td>呼</td><td></td><td></td><td>都</td><td>他</td><td>徒</td><td></td><td>奴</td><td>盧</td><td>作</td><td>倉</td><td>昨</td><td>蘇</td><td></td>
 </tr>
 <tr>
-	<th>二等</th><td>博</td><td>普</td><td>蒲</td><td>莫</td><td>古</td><td>苦</td><td></td><td>五</td><td>烏</td><td>呼</td><td>胡</td><td></td><td>陟</td><td>丑</td><td>直</td><td></td><td></td><td>女</td><td>力</td><td>側</td><td>初</td><td>士</td><td>所</td><td></td>
+	<th>二等</th><td>博</td><td>普</td><td>蒲</td><td>莫</td><td>古</td><td>苦</td><td>胡</td><td>五</td><td>烏</td><td>呼</td><td></td><td></td><td>陟</td><td>丑</td><td>直</td><td></td><td>女</td><td>力</td><td>側</td><td>初</td><td>士</td><td>所</td><td></td>
 </tr>
 <tr>
-	<th>鈍音三等</th><td>方</td><td>芳</td><td>符</td><td>武</td><td>居</td><td>去</td><td>渠</td><td>魚</td><td>於</td><td>許</td><td>于</td><td></td><td>陟</td><td>丑</td><td>直</td><td></td><td></td><td>女</td><td>力</td><td>側</td><td>初</td><td>士</td><td>所</td><td>俟</td>
+	<th>鈍音三等</th><td>方</td><td>芳</td><td>符</td><td>武</td><td>居</td><td>去</td><td>渠</td><td>魚</td><td>於</td><td>許</td><td>于</td><td></td><td>陟</td><td>丑</td><td>直</td><td></td><td>女</td><td>力</td><td>側</td><td>初</td><td>士</td><td>所</td><td>俟</td>
 </tr>
 <tr>
-	<th>其它三等</th><td>方</td><td>芳</td><td>符</td><td>武</td><td>居</td><td>去</td><td>渠</td><td>魚</td><td>於</td><td>許</td><td>于</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+	<th>其它三等</th><td>方</td><td>芳</td><td>符</td><td>武</td><td>居</td><td>去</td><td>渠</td><td>魚</td><td>於</td><td>許</td><td>于</td><td>食</td><td>之</td><td>昌</td><td>時</td><td>式</td><td>而</td><td></td><td></td><td></td><td></td><td></td><td></td>
 </tr>
 <tr>
-	<th>尖音三等</th><td>方</td><td>芳</td><td>符</td><td>武</td><td>居</td><td>去</td><td>渠</td><td>魚</td><td>於</td><td>許</td><td></td><td>以</td><td>之</td><td>昌</td><td>時</td><td>式</td><td>食</td><td>而</td><td></td><td>子</td><td>七</td><td>疾</td><td>息</td><td>徐</td>
+	<th>尖音三等</th><td>方</td><td>芳</td><td>符</td><td>武</td><td>居</td><td>去</td><td>渠</td><td>魚</td><td>於</td><td>許</td><td></td><td>以</td><td></td><td></td><td></td><td></td><td></td><td></td><td>子</td><td>七</td><td>疾</td><td>息</td><td>徐</td>
 </tr>
 </table></li>
 <li><p><span>介音</span><span>Medial</span></p>

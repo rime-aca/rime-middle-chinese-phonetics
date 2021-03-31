@@ -23,18 +23,17 @@ schema:
     默認不顯示「開」
     同韻不同調等情況予以縮併顯示
 
-    聲母壓縮後(24)：
+    聲母壓縮後(23)：
     幫滂並　　明
-    見谿羣　　疑
-    影曉匣　以
-    端透定書船泥來
-    精淸從心邪
+    見谿匣于曉疑影
+    端透定以書泥
+    精淸從邪心　來
 
     韻母壓縮後(26)：
-    之蒸侯東脂眞侵
-    支靑蕭　齊先添
-    模登　冬咍元覃
-    歌淸豪唐泰寒談
+    侯東蒸之脂眞侵
+    蕭　靑支齊先添
+    豪冬登模咍元覃
+    　唐淸歌泰寒談
 
     介音壓縮後(10)：
     ・鷗 一四等
@@ -203,24 +202,24 @@ middle_chinese_lookup:
     - xform/\x01b/\x01B並\x02/
     - xform/\x01m/\x01B明\x02/
     - xform/\x01thr/\x01R透\x02/ # 澈
-    - xform/\x01tr/\x01R端\x02/ # 知
-    - xform/\x01dr/\x01R定\x02/ # 澄
-    - xform/\x01nr/\x01R泥\x02/ # 娘
-    - xform/\x01nj/\x01泥\x02/ # 日
+    - xform/\x01tr/\x01R端\x02/  # 知
+    - xform/\x01dr/\x01R定\x02/  # 澄
+    - xform/\x01nr/\x01R泥\x02/  # 娘
+    - xform/\x01nj/\x01泥\x02/   # 日
     - xform/\x01th/\x01透\x02/
     - xform/\x01t/\x01端\x02/
     - xform/\x01d/\x01定\x02/
     - xform/\x01n/\x01泥\x02/
     - xform/\x01chr/\x01R淸\x02/ # 初
-    - xform/\x01cr/\x01R精\x02/ # 莊
+    - xform/\x01cr/\x01R精\x02/  # 莊
     - xform/\x01zsr/\x01R邪\x02/ # 俟
-    - xform/\x01zr/\x01R從\x02/ # 崇
-    - xform/\x01sr/\x01R心\x02/ # 生
-    - xform/\x01chj/\x01透\x02/ # 昌
-    - xform/\x01cj/\x01端\x02/ # 章
-    - xform/\x01zsj/\x01船\x02/
-    - xform/\x01zj/\x01定\x02/ # 常
-    - xform/\x01sj/\x01書\x02/
+    - xform/\x01zr/\x01R從\x02/  # 崇
+    - xform/\x01sr/\x01R心\x02/  # 生
+    - xform/\x01chj/\x01J透\x02/ # 昌
+    - xform/\x01cj/\x01J端\x02/  # 章
+    - xform/\x01zsj/\x01J以\x02/ # 船
+    - xform/\x01zj/\x01J定\x02/  # 常
+    - xform/\x01sj/\x01J書\x02/
     - xform/\x01ch/\x01淸\x02/
     - xform/\x01c/\x01精\x02/
     - xform/\x01zs/\x01邪\x02/
@@ -229,11 +228,11 @@ middle_chinese_lookup:
     - xform/\x01kh/\x01K谿\x02/
     - xform/\x01k/\x01K見\x02/
     - xform/\x01gh/\x01K匣\x02/
-    - xform/\x01g/\x01K羣\x02/
+    - xform/\x01g/\x01K匣\x02/   # 羣
     - xform/\x01ŋ/\x01K疑\x02/
     - xform/\x01h/\x01K曉\x02/
     - xform/\x01q/\x01K影\x02/
-    - xform/\x01([iy])/\x01G匣\x02$1/ # 云
+    - xform/\x01([iy])/\x01G于\x02$1/ # 云
     - xform/\x01j/\x01以\x02/
     - xform/\x01l/\x01L來\x02/
     - xform/'//
@@ -251,7 +250,7 @@ middle_chinese_lookup:
     - xform/\x02(ru?)eŋ((?:[wxhq]|／)*\x03)/\x02$1o靑$2/ # 耕
     - xform/\x02j?([iy])eŋ((?:[wxhq]|／)*\x03)/\x02jɨ$1o庚$2/ # 淸
     - xform/\x02(u?e)ŋ((?:[wxhq]|／)*\x03)/\x02$1o靑$2/
-    - xform/\x02([iy])ŋ((?:[wxhq]|／)*\x03)/\x02ɨ$1o蒸$2/
+    - xform/\x02(j?)([iy])ŋ((?:[wxhq]|／)*\x03)/\x02$1ɨ$2o蒸$3/
     - xform/\x02iiŋ((?:[wxhq]|／)*\x03)/\x02io蒸$1/ # 憶
     - xform/\x02(u?)oŋ((?:[wxhq]|／)*\x03)/\x02$1o登$2/
 # 眞元寒先
@@ -323,11 +322,11 @@ middle_chinese_lookup:
     - xform/(重紐ɨ|[RL]三等)/漪/
     - xform/(重紐jɨ|三等)/伊/
     - xform/[KGRLJ]//
-    - xform/\x01[^B]?o[uy]\x03/鷗/
-    - xform/娃鷗/蛙/
-    - xform/依鷗/威/
-    - xform/漪鷗/逶/
-    - xform/伊鷗/惟/
+    - xform/\x01[^B]?o[uy]\x03/區/
+    - xform/娃區/蛙/
+    - xform/依區/威/
+    - xform/漪區/逶/
+    - xform/伊區/惟/
     - xform/\x01B?[a-z]*\x03//
     - xform/\x07\x04/\x07・\x04/
 # 壓縮聲母、韻母
