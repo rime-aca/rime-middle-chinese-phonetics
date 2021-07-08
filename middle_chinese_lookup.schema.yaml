@@ -110,15 +110,15 @@ cangjie:
   dictionary: cangjie5
   enable_charset_filter: true
   preedit_format:
-    - 'xform/^([a-z]*)$/【廣韻】$1｜\U$1\E/'
+    - 'xform/^([a-z]*)$/【倉頡】$1｜\U$1\E/'
     - "xlit|ABCDEFGHIJKLMNOPQRSTUVWXYZ|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符|"
   comment_format:
     - "xlit|abcdefghijklmnopqrstuvwxyz'~|日月金木水火土竹戈十大中一弓人心手口尸廿山女田難卜符·～|"
   # affix_segmentor@cangjie
   tag: cangjie
-  prefix: 'C:'
+  prefix: "C:"
   suffix: ';'
-  initial_quality: 1
+  initial_quality: 0.5
   tips: 〔倉頡〕
   closing_tips: 〔廣韻〕
 
@@ -127,10 +127,11 @@ pinyin:
   # script_translator@pinyin
   dictionary: luna_pinyin
   preedit_format:
-    - "xform/^([a-z]*)$/【廣韻】$1/"
+    - "xform/^([a-z]*)$/【拼音】$1/"
+    - "xform/v/ü/"
   # affix_segmentor@pinyin
   tag: pinyin
-  prefix: 'P:'
+  prefix: "P:"
   suffix: ';'
   initial_quality: 0.25
   tips: 〔拼音〕
@@ -158,6 +159,7 @@ recognizer:
     cangjie: "C:[a-z']*;?$"
     pinyin: "P:[a-z']*;?$"
     reverse_lookup: "(?<![A-Z]):[a-z']*;?$"
+    upper_case: ^[A-Z][a-zA-Z]*$
 
 # 標註中古音
 middle_chinese_lookup:
