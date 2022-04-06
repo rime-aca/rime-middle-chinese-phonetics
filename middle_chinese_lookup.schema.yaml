@@ -4,46 +4,44 @@
 schema:
   schema_id: middle_chinese_lookup
   name: 廣韻查詢
-  version: "5.3"
+  version: "6.0"
   author:
-    - Polyhedron
+    - ayaka14732
     - 雪齋
     - 佛振
   description:
-    基於Polyhedron製作的中古漢語拼音（亦稱「古韻羅馬字」）製作
+    基於切韻拼音（Tshet-uinh Phonetic Alphabet, TUPA)製作
     韻典網·廣韻 http://ytenx.org/kyonh/
-    http://zh.wikipedia.org/wiki/User:Polyhedron/中古漢語拼音
+    UntPhesoca 知乎專欄 https://zhuanlan.zhihu.com/p/478751152
     雪齋在此基礎上寫出反算廣韻漢字聲韻調算法
     顯示結果爲：「〖聲母〗介音【韻母】聲調」
-    韻母皆舉平以賅上去入，脣音無開合
+    韻母皆舉平以賅上去入
     一、四等韻無介音
-    二等韻介音記爲舌
+    二三等韻標記介音
     三等韻介音三分，分別接後元音、重紐三等、重紐四等
+    端、知、章、精、莊等聲母倣効脣牙音聲母，三等分三分，實現聲母形式上簡併
     聲母可選是否區分輕重脣音
-    默認不顯示「開」
-    同韻不同調等情況予以縮併顯示
 
-    聲母壓縮後(23)：
+    聲母壓縮後(24)：
     幫滂並　　明
-    見谿匣于曉疑影
-    端透定以書泥
+    見谿匣云曉疑影
+    端透定船書泥以
     精淸從邪心　來
 
     韻母壓縮後(26)：
     侯東蒸之脂眞侵
     蕭　靑支齊先添
-    豪冬登模咍元覃
+    豪冬登模咍痕覃
     　唐淸歌泰寒談
 
     介音壓縮後(10)：
-    ・鷗 一四等
+    ・區 一四等
     娃蛙 二等
     漪逶 重紐三等
     依威 無重紐三等
     伊惟 重紐四等
 
   dependencies:
-    - zyenpheng
     - cangjie5
     - luna_pinyin
 
@@ -81,7 +79,7 @@ engine:
   translators:
     - echo_translator
     - punct_translator
-    - script_translator@zyenpheng
+    - script_translator@tupa
     - table_translator@cangjie
     - script_translator@pinyin
   filters:
@@ -97,9 +95,8 @@ speller:
 abc_segmentor:
   extra_tags: [ pinyin, cangjie ]
 
-zyenpheng:
-  # table_translator@zyenpheng
-  dictionary: zyenpheng
+tupa:
+  dictionary: tupa
   spelling_hints: 4
   preedit_format:
     - "xform/^([a-z]*)$/【廣韻】$1/"
@@ -164,184 +161,150 @@ recognizer:
 # 標註中古音
 middle_chinese_lookup:
   tags:  # any
-  dictionary: zyenpheng
+  dictionary: tupa
   overwrite_comment: true  # 覆蓋其他提示
   comment_format:
     - xform/ /\x03 \x01/
     - xform/$/\x03/
     - xform/^/\x01/
-# 預處理
-    - xform/ng/ŋ/
-    - xform/k\x03/ŋq\x03/
-    - xform/t\x03/nq\x03/
-    - xform/p\x03/mq\x03/
-    - xform/(\x01(?:th?|ch?|zs?|[dns]))r(?=[^iy'])/$1r'r/
-    - xform/(\x01(?:ph?|kh?|gh?|[bmhqiy]|ŋ)[iy]|\x01[iy])eŋ/$1æŋ/
-    - xform/j(?![iy'])/ji/
-    - xform/(\x01(?:ch?|zs?|[sn])?[jl])(?=([iy]e([umn]|ŋ)?|i[imn]|yn)[dxhq]?)/$1'j/
-    - xform/(\x01(?:ch?|zs?|s))(?=(?:[iy]e(?:[umn]|ŋ)?|i[imn]|yn)[dxhq]?)/$1'j/
-    - xform/(\x01(?:ch?|zs?|s)rj?i)n/$1ɿn/
-    - xform/(\x01)(?!ph?|kh?|gh?|ŋ|[bmhqjiy])([^aeiouy]*y)n([xhq]?\x03)/$1$2ɿn$3/
-    - xform/(\x01)([^aeiouy]*jy)n([xhq]?\x03)/$1$2ɿn$3/
-    - xform/(\x01)(?!kh?|g|ŋ)([^aeioux]*)ia([xhq]?\x03)/$1$2'ria$3/
-# 壓縮聲調
-    - xform/([^xhdq])\x03/$1w\x03/
-    - xform/(\x01[^\x01\x03]+)([whxq])\x03((?:\s\x01[^\x01\x03]+\x03)*)\s\1([whxq])\x03((?:\s\x01[^\x01\x03]+\x03)*)\s\1([whxq]\x03)/$1$2$4$6$3$5/
-    - xform/(\x01[^\x01\x03]+)([whxq])\x03((?:\s\x01[^\x01\x03]+\x03)*)\s\1([whxq]\x03)/$1$2$4$3/
-    - xform/([xhq]+)w/w$1/
-    - xform/(w?)([hq]+)x/$1x$2/
-    - xform/q(h)/$1q/
-    - xform/\x02([^\x01\x02\x03wxhq]+?)([wxhq]+)／\2／\2\x03/\x02$1$2\x03/
-    - xform/\x02([^\x01\x02\x03wxhq]+?)([wxhq]+)／\2\x03/\x02$1$2\x03/
-# 轉換聲母
-# 如需開啓輕脣音請啓用以下四條
-#    - xform/\x01ph(?=y(o[in]?|a[mnd]|[au]ŋ)|iu(ŋ)?)/\x01B敷\x02/
-#    - xform/\x01p(?=y(o[in]?|a[mnd]|[au]ŋ)|iu(ŋ)?)/\x01B非\x02/
-#    - xform/\x01b(?=y(o[in]?|a[mnd]|[au]ŋ)|iu(ŋ)?)/\x01B奉\x02/
-#    - xform/\x01m(?=y(o[in]?|a[mnd]|[au]ŋ))/\x01V微\x02/
-    - xform/\x01ph/\x01B滂\x02/
-    - xform/\x01p/\x01B幫\x02/
-    - xform/\x01b/\x01B並\x02/
-    - xform/\x01m/\x01B明\x02/
-    - xform/\x01thr/\x01R透\x02/ # 澈
-    - xform/\x01tr/\x01R端\x02/  # 知
-    - xform/\x01dr/\x01R定\x02/  # 澄
-    - xform/\x01nr/\x01R泥\x02/  # 娘
-    - xform/\x01nj/\x01泥\x02/   # 日
-    - xform/\x01th/\x01透\x02/
-    - xform/\x01t/\x01端\x02/
-    - xform/\x01d/\x01定\x02/
-    - xform/\x01n/\x01泥\x02/
-    - xform/\x01chr/\x01R淸\x02/ # 初
-    - xform/\x01cr/\x01R精\x02/  # 莊
-    - xform/\x01zsr/\x01R邪\x02/ # 俟
-    - xform/\x01zr/\x01R從\x02/  # 崇
-    - xform/\x01sr/\x01R心\x02/  # 生
-    - xform/\x01chj/\x01J透\x02/ # 昌
-    - xform/\x01cj/\x01J端\x02/  # 章
-    - xform/\x01zsj/\x01J以\x02/ # 船
-    - xform/\x01zj/\x01J定\x02/  # 常
-    - xform/\x01sj/\x01J書\x02/
-    - xform/\x01ch/\x01淸\x02/
-    - xform/\x01c/\x01精\x02/
-    - xform/\x01zs/\x01邪\x02/
-    - xform/\x01z/\x01從\x02/
-    - xform/\x01s/\x01心\x02/
-    - xform/\x01kh/\x01K谿\x02/
-    - xform/\x01k/\x01K見\x02/
-    - xform/\x01gh/\x01K匣\x02/
-    - xform/\x01g/\x01K匣\x02/   # 羣
-    - xform/\x01ŋ/\x01K疑\x02/
-    - xform/\x01h/\x01K曉\x02/
-    - xform/\x01q/\x01K影\x02/
-    - xform/\x01([iy])/\x01G于\x02$1/ # 云
-    - xform/\x01j/\x01以\x02/
-    - xform/\x01l/\x01L來\x02/
-    - xform/'//
-# 轉換韻母：
-# 東冬唐
-    - xform/\x02(i?)uŋ((?:[wxhq]|／)*\x03)/\x02$1uo東$2/
-    - xform/\x02(y)uŋ((?:[wxhq]|／)*\x03)/\x02$1o冬$2/ # 鐘
-    - xform/\x02(u)uŋ((?:[wxhq]|／)*\x03)/\x02$1o冬$2/
-    - xform/\x02(r)uŋ((?:[wxhq]|／)*\x03)/\x02$1uo冬$2/ # 江
-    - xform/\x02([iy])aŋ((?:[wxhq]|／)*\x03)/\x02$1o唐$2/ # 陽
-    - xform/\x02(u?)aŋ((?:[wxhq]|／)*\x03)/\x02$1o唐$2/
-# 蒸登淸靑
-    - xform/\x02(ru?)aŋ((?:[wxhq]|／)*\x03)/\x02$1o庚$2/
-    - xform/\x02([iy])æŋ((?:[wxhq]|／)*\x03)/\x02ɨ$1o庚$2/
-    - xform/\x02(ru?)eŋ((?:[wxhq]|／)*\x03)/\x02$1o靑$2/ # 耕
-    - xform/\x02j?([iy])eŋ((?:[wxhq]|／)*\x03)/\x02jɨ$1o庚$2/ # 淸
-    - xform/\x02(u?e)ŋ((?:[wxhq]|／)*\x03)/\x02$1o靑$2/
-    - xform/\x02(j?)([iy])ŋ((?:[wxhq]|／)*\x03)/\x02$1ɨ$2o蒸$3/
-    - xform/\x02iiŋ((?:[wxhq]|／)*\x03)/\x02io蒸$1/ # 憶
-    - xform/\x02(u?)oŋ((?:[wxhq]|／)*\x03)/\x02$1o登$2/
-# 眞元寒先
-    - xform/\x02(j?)(y)ɿn((?:[wxhq]|／)*\x03)/\x02$1ɨ$2o眞$3/ # 諄
-    - xform/\x02(j?)(i)ɿn((?:[wxhq]|／)*\x03)/\x02$1ɨ$2o眞$3/ # 臻
-    - xform/\x02(j?)([iy])n((?:[wxhq]|／)*\x03)/\x02$1ɨ$2o眞$3/
-    - xform/\x02(i)on((?:[wxhq]|／)*\x03)/\x02$1o眞$2/ # 欣
-    - xform/\x02(u)on((?:[wxhq]|／)*\x03)/\x02$1o元$2/ # 魂
-    - xform/\x02on((?:[wxhq]|／)*\x03)/\x02o元$1/ # 痕
-    - xform/\x02(y)on((?:[wxhq]|／)*\x03)/\x02$1o眞$2/ # 文
-    - xform/\x02(u)an((?:[wxhq]|／)*\x03)/\x02$1o寒$2/ # 桓
-    - xform/\x02([iy])an((?:[wxhq]|／)*\x03)/\x02$1o元$2/
-    - xform/\x02(ru?)an((?:[wxhq]|／)*\x03)/\x02$1o寒$2/ # 刪
-    - xform/\x02an((?:[wxhq]|／)*\x03)/\x02o寒$1/
-    - xform/\x02(ru?)en((?:[wxhq]|／)*\x03)/\x02$1o先$2/ # 山
-    - xform/\x02(j?)([iy])en((?:[wxhq]|／)*\x03)/\x02$1ɨ$2o先$3/ # 仙
-    - xform/\x02(u?e)n((?:[wxhq]|／)*\x03)/\x02$1o先$2/
-# 侵覃談添
-    - xform/\x02(j?)(i)m((?:[wxhq]|／)*\x03)/\x02$1ɨ$2o侵$3/
-    - xform/\x02(i)am((?:[wxhq]|／)*\x03)/\x02$1o覃$2/ # 嚴
-    - xform/\x02(y)am((?:[wxhq]|／)*\x03)/\x02$1o覃$2/ # 凡
-    - xform/\x02(r)am((?:[wxhq]|／)*\x03)/\x02$1o談$2/ # 銜
-    - xform/\x02(r)em((?:[wxhq]|／)*\x03)/\x02$1o添$2/ # 咸
-    - xform/\x02am((?:[wxhq]|／)*\x03)/\x02o談$1/
-    - xform/\x02(j?)(i)em((?:[wxhq]|／)*\x03)/\x02$1ɨ$2o添$3/ # 鹽
-    - xform/\x02(e)m((?:[wxhq]|／)*\x03)/\x02$1o添$2/
-    - xform/\x02om((?:[wxhq]|／)*\x03)/\x02o覃$1/
-# 侯豪蕭
-    - xform/\x02(r)au((?:[wxh]|／)*\x03)/\x02$1豪$2/ # 肴
-    - xform/\x02au((?:[wxh]|／)*\x03)/\x02豪$1/
-    - xform/\x02(j?)(i)eu((?:[wxh]|／)*\x03)/\x02$1ɨ$2蕭$3/ # 宵
-    - xform/\x02(e)u((?:[wxh]|／)*\x03)/\x02$1蕭$2/
-    - xform/\x02(i)u((?:[wxh]|／)*\x03)/\x02$1侯$2/ # 尤
-    - xform/\x02u((?:[wxh]|／)*\x03)/\x02侯$1/
-    - xform/[RL]?((?:[^\x00-\x7f]{3}|／)+)\x02(y)((?:[wxh]|／)*\x03)/$1\x02jɨ$2侯$3/ # 幽
-# 脂咍泰齊
-    - xform/\x02(j?)([iy])i((?:[wxh]|／)*\x03)/\x02$1ɨ$2o脂$3/
-    - xform/\x02([iy])oi((?:[wxh]|／)*\x03)/\x02$1o脂$2/ # 微
-    - xform/\x02(ru?)ai((?:[wxh]|／)*\x03)/\x02$1o齊$2/ # 皆
-    - xform/\x02(u?e)((?:[wxh]|／)*\x03)/\x02$1o齊$2/
-    - xform/\x02(j?)([iy])e((?:d|／)+\x03)/\x02$1ɨ$2o齊$3/ # 祭
-    - xform/\x02([iy])a((?:d|／)+\x03)/\x02$1o咍$2/ # 廢
-    - xform/\x02(ru?)a((?:d|／)+\x03)/\x02$1o泰$2/ # 夬
-    - xform/\x02(u?)a((?:d|／)+\x03)/\x02$1o泰$2/
-    - xform/\x02i?(u)ai((?:[wxh]|／)*\x03)/\x02$1o咍$2/ # 灰
-    - xform/\x02ai((?:[wxh]|／)*\x03)/\x02o咍$1/
-# 之模歌支
-    - xform/\x02(j?)([iy])e((?:[wxh]|／)*\x03)/\x02$1ɨ$2o支$3/
-    - xform/\x02i((?:[wxh]|／)*\x03)/\x02io之$1/
-    - xform/\x02(ru?)e((?:[wxh]|／)*\x03)/\x02$1o支$2/ # 佳
-    - xform/\x02([uiy])a((?:[wxh]|／)*\x03)/\x02$1o歌$2/ # 戈
-    - xform/\x02a((?:[wxh]|／)*\x03)/\x02o歌$1/
-    - xform/\x02(r[ui]?)a((?:[wxh]|／)*\x03)/\x02$1o歌$2/ # 麻
-    - xform/\x02jr([ui]?)a((?:[wxh]|／)*\x03)/\x02ɨ$1o歌$2/ # 麻
-    - xform/\x02(i)o((?:[wxh]|／)*\x03)/\x02$1o模$2/ # 魚
-    - xform/\x02(y)o((?:[wxh]|／)*\x03)/\x02$1o模$2/ # 虞
-    - xform/\x02o((?:[wxh]|／)*\x03)/\x02o模$1/
-# 處理介音
-    - xform/d/h/
-    - xform/iu/y/
-    - xform/(\x01[^\x01\x03wxhq]+)([whxq]+)((?:／[whxq]+)*)\x03/$1\x05$2$3/
-#
-    - xform/\x01([BKG])((?:[^\x00-\x7f]{3}|／)+)\x02(j?ɨ)([iy])(o?)([^\x00-\x7f]{3})/\x06$2\x07重紐$3\x01$1$5$4\x03\x04$6/
-    - xform/\x01([BKRGLJ]?)((?:[^\x00-\x7f]{3}|／)+)\x02(?:r|j?ɨ)?([iy])(o?)([^\x00-\x7f]{3})/\x06$2\x07$1三等\x01$1$4$3\x03\x04$5/
-    - xform/\x01([BKRGLJ]?)((?:[^\x00-\x7f]{3}|／)+)\x02r(u?)(o?)([^\x00-\x7f]{3})/\x06$2\x07娃\x01$1$4$3\x03\x04$5/
-    - xform/\x01([BKRGLJ]?)((?:[^\x00-\x7f]{3}|／)+)\x02(u?)e?(o?)([^\x00-\x7f]{3})/\x06$2\x07\x01$1$4$3\x03\x04$5/
-    - xform/B三等/威/
-    - xform/[KGJ]三等/依/
-    - xform/(重紐ɨ|[RL]三等)/漪/
-    - xform/(重紐jɨ|三等)/伊/
-    - xform/[KGRLJ]//
-    - xform/\x01[^B]?o[uy]\x03/區/
-    - xform/娃區/蛙/
-    - xform/依區/威/
-    - xform/漪區/逶/
-    - xform/伊區/惟/
-    - xform/\x01B?[a-z]*\x03//
-    - xform/\x07\x04/\x07・\x04/
-# 壓縮聲母、韻母
-    - xform/\x06([^\x00-\x7f]{3})\x07\x01?([^\x01\x03-\x07]*)\x03?\x04\x01?([^\x00-\x7f]{3}(?:\x02[^\x00-\x7f]{3})*)\x03?\x05\x01?([^\x01\x03-\x07]+)\x03?\s((?:[^\s]+\s)*)\x06\1\x07\x01?([^\x01\x03-\x07]*)\x03?\x04\x01?([^\x00-\x7f]{3}(?:\x02[^\x00-\x7f]{3})*)\x03?\x05\x01?([^\x01\x03-\x07]+)\x03?(\s|$)/\x06$1\x07\x01$2\x02$6\x03\x04\x01$3\x02$7\x03\x05\x01$4\x02$8\x03 $5$9/
-    - xform/\x06([^\x00-\x7f]{3})\x07\x01?([^\x01\x03-\x07]*)\x03?\x04\x01?([^\x00-\x7f]{3}(?:\x02[^\x00-\x7f]{3})*)\x03?\x05\x01?([^\x01\x03-\x07]+)\x03?\s((?:[^\s]+\s)*)\x06\1\x07\x01?([^\x01\x03-\x07]*)\x03?\x04\x01?([^\x00-\x7f]{3}(?:\x02[^\x00-\x7f]{3})*)\x03?\x05\x01?([^\x01\x03-\x07]+)\x03?(\s|$)/\x06$1\x07\x01$2\x02$6\x03\x04\x01$3\x02$7\x03\x05\x01$4\x02$8\x03 $5$9/
-    - xform/\x06([^\x00-\x7f]{3})\x07\x01?([^\x01\x03-\x07]*)\x03?\x04\x01?([^\x00-\x7f]{3}(?:\x02[^\x00-\x7f]{3})*)\x03?\x05\x01?([^\x01\x03-\x07]+)\x03?\s((?:[^\s]+\s)*)\x06\1\x07\x01?([^\x01\x03-\x07]*)\x03?\x04\x01?([^\x00-\x7f]{3}(?:\x02[^\x00-\x7f]{3})*)\x03?\x05\x01?([^\x01\x03-\x07]+)\x03?(\s|$)/\x06$1\x07\x01$2\x02$6\x03\x04\x01$3\x02$7\x03\x05\x01$4\x02$8\x03 $5$9/
-    - xform/\x06\x01?([^\x00-\x7f]{3}(?:\x02[^\x00-\x7f]{3})*)\x03?\x07\x01?([^\x01\x03-\x07]*)\x03?\x04([^\x00-\x7f]{3})\x05\x01?([^\x01\x03-\x07]+)\x03?\s((?:[^\s]+\s)*)\x06\x01?([^\x00-\x7f]{3}(?:\x02[^\x00-\x7f]{3})*)\x03?\x07\x01?([^\x01\x03-\x07]*)\x03?\x04\3\x05\x01?([^\x01\x03-\x07]+)\x03?(\s|$)/\x06\x01$1\x02$6\x03\x07\x01$2\x02$7\x03\x04$3\x05\x01$4\x02$8\x03 $5$9/
-    - xform/\x06\x01?([^\x00-\x7f]{3}(?:\x02[^\x00-\x7f]{3})*)\x03?\x07\x01?([^\x01\x03-\x07]*)\x03?\x04([^\x00-\x7f]{3})\x05\x01?([^\x01\x03-\x07]+)\x03?\s((?:[^\s]+\s)*)\x06\x01?([^\x00-\x7f]{3}(?:\x02[^\x00-\x7f]{3})*)\x03?\x07\x01?([^\x01\x03-\x07]*)\x03?\x04\3\x05\x01?([^\x01\x03-\x07]+)\x03?(\s|$)/\x06\x01$1\x02$6\x03\x07\x01$2\x02$7\x03\x04$3\x05\x01$4\x02$8\x03 $5$9/
-    - xform/\x06\x01?([^\x00-\x7f]{3}(?:\x02[^\x00-\x7f]{3})*)\x03?\x07\x01?([^\x01\x03-\x07]*)\x03?\x04([^\x00-\x7f]{3})\x05\x01?([^\x01\x03-\x07]+)\x03?\s((?:[^\s]+\s)*)\x06\x01?([^\x00-\x7f]{3}(?:\x02[^\x00-\x7f]{3})*)\x03?\x07\x01?([^\x01\x03-\x07]*)\x03?\x04\3\x05\x01?([^\x01\x03-\x07]+)\x03?(\s|$)/\x06\x01$1\x02$6\x03\x07\x01$2\x02$7\x03\x04$3\x05\x01$4\x02$8\x03 $5$9/
-    - xform/\x01([^\x01-\x03]*)((?:\x02\1)+)\x03/$1/
-    - xform/\x01([^\x01\x03]*)\x03/$1/
-    - xlit||／【】〖〗|
-# 註聲調
-    - xlit|wxhq|平上去入|
-    - xform/\s+$//
+
+    # 鈍音聲母
+    - xform/\x01ph/滂\x02/
+    - xform/\x01p/幫\x02/
+    - xform/\x01b/並\x02/
+    - xform/\x01m/明\x02/
+    - xform/\x01kh/谿\x02/
+    - xform/\x01k/見\x02/
+    - xform/\x01gh?/匣\x02/ #匣羣
+    - xform/\x01ng/疑\x02/
+    - xform/\x01q/影\x02/
+    - xform/\x01h/曉\x02/
+    - xform/\x01([iyuoaew])/云\x02\1/
+
+    # 銳音聲母
+    - xform/\x01tsrh/清R\x02/ #初
+    - xform/\x01tsr/精R\x02/ #莊
+    - xform/\x01dzr/從R\x02/ #崇
+    - xform/\x01sr/心R\x02/ #生
+    - xform/\x01zr/邪R\x02/ #俟
+    - xform/\x01tjh/透J\x02/ #昌
+    - xform/\x01tj/端J\x02/ #章
+    - xform/\x01dj/定J\x02/ #常
+    - xform/\x01sj/書J\x02/
+    - xform/\x01zj/船J\x02/
+    - xform/\x01tsh/清\x02/
+    - xform/\x01ts/精\x02/
+    - xform/\x01dz/從\x02/
+    - xform/\x01s/心\x02/
+    - xform/\x01z/邪\x02/
+    - xform/\x01nj/泥J\x02/ #日
+    - xform/\x01trh/透R\x02/ #徹
+    - xform/\x01tr/端R\x02/ #知
+    - xform/\x01dr/定R\x02/ #澄
+    - xform/\x01nr/泥R\x02/ #孃
+    - xform/\x01th/透C\x02/
+    - xform/\x01t/端C\x02/
+    - xform/\x01d/定C\x02/
+    - xform/\x01n/泥C\x02/
+    - xform/\x01j/以J\x02/
+    - xform/\x01l/來\x02/
+
+    # 聲調
+    - xform/([^ptkqh])\x03/\1\x03平/
+    - xform/k\x03/ng\x03入/
+    - xform/t\x03/n\x03入/
+    - xform/p\x03/m\x03入/
+    - xform/q\x03/\x03上/
+    - xform/h\x03/\x03去/
+
+  # 後鼻韻
+    - xform/\x02(o?u)ng\x03/\x02\1C東/
+    - xform/\x02oeung\x03/\x022冬/ #江
+    - xform/\x02(u?)ong\x03/\x02\1C冬/ #冬鐘
+    - xform/\x02(y)ng\x03/\x02\1C蒸/
+    - xform/\x02([yu])ing\x03/\x02\1B蒸/
+    - xform/\x02(w?)eong\x03/\x02\1登/
+    - xform/\x02(w?)eeng\x03/\x02\12青/ #耕
+    - xform/\x02(w?)eng\x03/\x02\1青/
+    - xform/\x02([yu])ang\x03/\x02\1C唐/ #陽
+    - xform/\x02(w?)ang\x03/\x02\1唐/
+    - xform/\x02(w?[iyu])aeng\x03/\x02\1B庚/ #庚清
+    - xform/\x02(w?)aeng\x03/\x02\12庚/
+
+    # 開韻
+    - xform/\x02(w?)ae\x03/\x02\12歌/ #麻
+    - xform/\x02(i)ae\x03/\x02\1歌/ #麻
+    - xform/\x02([wyu]?)a\x03/\x02\1C歌/
+    - xform/\x02([yu]?)o\x03/\x02\1C模/ #模魚虞
+    - xform/\x02(w?[iyu])e\x03/\x02\1B支/
+    - xform/\x02(w?)ee\x03/\x02\12支/ #佳
+    - xform/\x02(y)\x03/\x02\1C之/
+
+    # 收脣韻
+    - xform/\x02ou\x03/\x02侯/
+    - xform/\x02(u)\x03/\x02\1C侯/ #尤
+    - xform/\x02(y?i)w\x03/\x02\1B侯/ #幽
+    - xform/\x02([iy]?)ew\x03/\x02\1B蕭/ #蕭宵
+    - xform/\x02aw\x03/\x02豪/
+    - xform/\x02aew\x03/\x022豪/ #肴
+
+    # 收齒韻
+    - xform/\x02([wyu]?i)\x03/\x02\1B脂/
+    - xform/\x02([yu])j\x03/\x02\1C脂/ #微
+    - xform/\x02(w?[iyu]?)ej\x03/\x02\1B齊/ #齊祭
+    - xform/\x02(w?)eej\x03/\x02\12齊/ #皆
+    - xform/\x02([yu])oj\x03/\x02\1C咍/ #廢
+    - xform/\x02oj\x03/\x02w咍/ #灰
+    - xform/\x02eoj\x03/\x02咍/
+    - xform/\x02(w?)aj\x03/\x02\1泰/
+    - xform/\x02(w?)aej\x03/\x02\12泰/ #夬
+
+    # 前鼻韻
+    - xform/\x02(w?i|[yu]i)n\x03/\x02\1B真/ #真臻
+    - xform/\x02([yu])n\x03/\x02\1C真/ #殷文
+    - xform/\x02([yu])on\x03/\x02\1C痕/ #元
+    - xform/\x02on\x03/\x02w痕/ #魂
+    - xform/\x02eon\x03/\x02痕/
+    - xform/\x02(w?[iyu]?)en\x03/\x02\1B先/ #先仙
+    - xform/\x02(w?)een\x03/\x02\12先/ #山
+    - xform/\x02(w?)an\x03/\x02\1寒/
+    - xform/\x02(w?)aen\x03/\x02\12寒/ #刪
+
+    # 脣鼻韻
+    - xform/\x02(i|yi)m\x03/\x02\1B侵/
+    - xform/\x02([iy]?)em\x03/\x02\1B添/ #添鹽
+    - xform/\x02eem\x03/\x022添/ #咸
+    - xform/\x02([yu]?)om\x03/\x02\1C覃/ #覃嚴凡
+    - xform/\x02am\x03/\x02談/
+    - xform/\x02aem\x03/\x022談/ #銜
+
+    # 介音
+    - xform/R\x02(wi|u)[a-zA-Z0-9]*/逶/
+    - xform/R\x02[iy][a-zA-Z0-9]*/漪/
+    - xform/C\x02(wi|u)[a-zA-Z0-9]*/威/
+    - xform/C\x02[iy][a-zA-Z0-9]*/依/
+    - xform/J\x02(wi|u)[a-zA-Z0-9]*/惟/
+    - xform/J\x02[iy][a-zA-Z0-9]*/伊/
+
+    - xform/J\x02w2[a-zA-Z0-9]*/逶/ #異常音
+    - xform/J\x022[a-zA-Z0-9]*/漪/ #異常音
+
+    - xform/R?\x02u[a-z]*B[a-zA-Z0-9]*/逶/
+    - xform/R?\x02y[a-z]*B[a-zA-Z0-9]*/漪/
+    - xform/C?\x02u[a-z]*C[a-zA-Z0-9]*/威/
+    - xform/C?\x02y[a-z]*C[a-zA-Z0-9]*/依/
+    - xform/J?\x02wi[a-zA-Z0-9]*/惟/
+    - xform/J?\x02i[a-zA-Z0-9]*/伊/
+    - xform/R?\x02w2[a-zA-Z0-9]*/蛙/
+    - xform/R?\x022[a-zA-Z0-9]*/娃/
+
+    - xform/R\x02w[a-zA-Z0-9]*/蛙/ #異常音
+    - xform/R\x02[a-zA-Z0-9]*/娃/ #異常音
+    - xform/J\x02w[a-zA-Z0-9]*/惟/ #異常音
+    - xform/J\x02[a-zA-Z0-9]*/伊/ #異常音
+    - xform/C// #異常音
+
+    - xform/\x02w[a-zA-Z0-9]*/區/
+    - xform/\x02[a-zA-Z0-9]*/・/
+
     - xform/\s+/、/
