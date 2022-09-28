@@ -1,5 +1,5 @@
 <h1>Middle Chinese Phonetics</h1>
-<h3>廣韻反查</h3>
+<h3>切韻反查</h3>
 <p>配方： <b>℞ rime-aca/rime-middle-chinese-phonetics</b></p>
 <hr>
 <ul><ol><li> Input characters with Cangjie or Pinyin, results automatically appear.</li>
@@ -11,7 +11,7 @@
 <li> Lip initials doesn't indicate labio-velarization</li></ol>
 <ol>
 <li>以倉頡或普通話拼音查詢</li>
-<li>顯示格式：〖聲〗介【韻】調</li>
+<li>顯示格式：聲、介、韻、調</li>
 <ol><li>一、四等韻無介音</li>
 <li>三等韻介音三分，分別接後元音、重紐三等、重紐四等</li></ol>
 <li>韻母舉平以賅上去入</li>
@@ -39,11 +39,11 @@
 </table></li>
 <li><p><span>介音</span><span>Medial</span></p>
 <table><tr>
-	<th></th><th>一四等</th><th>二等</th><th>重紐三等</th><th>無重紐三等</th><th>重紐四等</th>
+	<th></th><th>一等</th><th>二等</th><th>四等</th><th>無重紐三等</th><th>重紐三等</th><th>重紐四等</th>
 </tr><tr>
-	<th>開</th><td>・</td><td>娃</td><td>漪</td><td>依</td><td>伊</td>
+	<th>開</th><td>烏</td><td>娃</td><td>翳</td><td>醫</td><td>漪</td><td>伊</td>
 </tr><tr>
-	<th>合</th><td>鷗</td><td>蛙</td><td>逶</td><td>威</td><td>惟</td>
+	<th>合</th><td>區</td><td>蛙</td><td>烓</td><td>憂</td><td>逶</td><td>幽</td>
 </tr>
 </table></li>
 <li><p><span>韻母</span><span>Final</span></p>
