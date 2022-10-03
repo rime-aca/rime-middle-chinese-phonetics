@@ -203,10 +203,10 @@ middle_chinese_lookup:
     - xform/\x01tr/知R\x02/
     - xform/\x01dr/澄R\x02/
     - xform/\x01nr/孃R\x02/
-    - xform/\x01th/透C\x02/
-    - xform/\x01t/端C\x02/
-    - xform/\x01d/定C\x02/
-    - xform/\x01n/泥C\x02/
+    - xform/\x01th/透\x02/
+    - xform/\x01t/端\x02/
+    - xform/\x01d/定\x02/
+    - xform/\x01n/泥\x02/
     - xform/\x01j/以J\x02/
     - xform/\x01([iyuoaew])/云R\x02\1/
     - xform/\x01l/來R\x02/
@@ -225,7 +225,7 @@ middle_chinese_lookup:
     - xform/\x02oeung\x03/\x02w2江/
     - xform/\x02ong\x03/\x02wC冬/
     - xform/\x02(u)ong\x03/\x02\1C鐘/
-    - xform/\x02([yu])ang\x03/\x02\1C陽/
+    - xform/\x02([yui])ang\x03/\x02\1C陽/
     - xform/\x02(w?)ang\x03/\x02\1唐/
 
   # 後鼻顎韻
@@ -340,6 +340,7 @@ middle_chinese_lookup:
     - xform/見(憂|醫|逶|漪|幽|伊)/k\1/
     - xform/谿(區|烏|娃|蛙|烓|翳)/qʰ\1/
     - xform/谿(憂|醫|逶|漪|幽|伊)/kʰ\1/
+    - xform/羣(區|烏|娃|蛙|烓|翳)/ɢ\1/
     - xform/羣(憂|醫|逶|漪|幽|伊)/g\1/
     - xform/疑(區|烏|娃|蛙|烓|翳)/ɴ\1/
     - xform/疑(憂|醫|逶|漪|幽|伊)/ŋ\1/
@@ -349,16 +350,16 @@ middle_chinese_lookup:
     - xform/匣(憂|醫|逶|漪|幽|伊)/ʁ\1/
     - xform/影(區|烏|娃|蛙|烓|翳)/ʕ\1/
     - xform/影(憂|醫|逶|漪|幽|伊)/ʔ\1/
-    - xform/端(區|烏|烓|翳|伊|幽|醫|憂)/t\1/
+    - xform/端/t/
     - xform/知(娃|蛙|逶|漪)/ʈ\1/
     - xform/章(幽|伊)/ʨ\1/
-    - xform/透(區|烏|烓|翳|伊|幽|醫|憂)/tʰ\1/
+    - xform/透/tʰ/
     - xform/徹(娃|蛙|逶|漪)/ʈʰ\1/
     - xform/昌(幽|伊)/ʨʰ\1/
-    - xform/定(區|烏|烓|翳|伊|幽|醫|憂)/d\1/
+    - xform/定/d/
     - xform/澄(娃|蛙|逶|漪)/ɖ\1/
     - xform/常(幽|伊)/ʥ\1/
-    - xform/泥(區|烏|烓|翳)/n\1/
+    - xform/泥/n/
     - xform/孃(娃|蛙|逶|漪)/ɳ\1/
     - xform/日(幽|伊)/ɲ\1/
     - xform/書(幽|伊)/ɕ\1/
@@ -450,8 +451,9 @@ middle_chinese_lookup:
     - xform/(逶|憂)脂/ʸɨT/
     - xform/伊脂/iT/
     - xform/幽脂/ʸiT/
-    - xform/醫廢/ɤTi/
-    - xform/憂廢/oTi/
+    - xform/(醫|漪)廢/ɤTi/
+    - xform/伊廢/ⁱɤTi/
+    - xform/(憂|逶)廢/oTi/
     - xform/漪祭/e̠Ti/
     - xform/逶祭/ue̠Ti/
     - xform/伊祭/ieTi/
@@ -529,5 +531,6 @@ middle_chinese_lookup:
     - xform/ŋ入/k̚/
     - xform/n入/t̚/
     - xform/m入/p̚/
+    - "xform/\u031A//"
     - xform/T//
     - xform/、/, /
