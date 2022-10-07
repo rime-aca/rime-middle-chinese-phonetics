@@ -328,13 +328,13 @@ middle_chinese_lookup:
 
     - xform/\s+/、/
 
-    - xform/幫(區|烏|娃|蛙|烓|翳)/pˤ\1/
+    - xform/幫(區|烏|娃|蛙|烓|翳)/pˁ\1/
     - xform/幫(憂|醫|逶|漪|幽|伊)/p\1/
-    - xform/滂(區|烏|娃|蛙|烓|翳)/pˤʰ\1/
+    - xform/滂(區|烏|娃|蛙|烓|翳)/pˁʰ\1/
     - xform/滂(憂|醫|逶|漪|幽|伊)/pʰ\1/
-    - xform/並(區|烏|娃|蛙|烓|翳)/bˤ\1/
+    - xform/並(區|烏|娃|蛙|烓|翳)/bˁ\1/
     - xform/並(憂|醫|逶|漪|幽|伊)/b\1/
-    - xform/明(區|烏|娃|蛙|烓|翳)/mˤ\1/
+    - xform/明(區|烏|娃|蛙|烓|翳)/mˁ\1/
     - xform/明(憂|醫|逶|漪|幽|伊)/m\1/
     - xform/見(區|烏|娃|蛙|烓|翳)/q\1/
     - xform/見(憂|醫|逶|漪|幽|伊)/k\1/
@@ -384,7 +384,7 @@ middle_chinese_lookup:
     - xform/漪幽/ɨTu/
     - xform/伊幽/iTu/
     - xform/區侯/ʊT/
-    - xform/漪宵/e̠Tu/
+    - xform/漪宵/eTu/
     - xform/伊宵/ieTu/
     - xform/翳蕭/ɛTu/
     - xform/娃肴/ɹɛTu/
@@ -418,8 +418,8 @@ middle_chinese_lookup:
     - xform/區登/uʌTŋ/
     - xform/娃庚/ɹaTŋ/
     - xform/蛙庚/ɹuaTŋ/
-    - xform/(醫|漪)(庚|淸)/æ̠Tŋ/
-    - xform/(憂|逶)(庚|淸)/uæ̠Tŋ/
+    - xform/(醫|漪)(庚|淸)/æTŋ/
+    - xform/(憂|逶)(庚|淸)/uæTŋ/
     - xform/伊淸/iæTŋ/
     - xform/幽淸/yæTŋ/
 
@@ -429,8 +429,8 @@ middle_chinese_lookup:
     - xform/(憂|逶)虞/oT/
     - xform/伊魚/ⁱɤT/
     - xform/幽虞/ʸoT/
-    - xform/(醫|漪)支/e̠T/
-    - xform/(憂|逶)支/ue̠T/
+    - xform/(醫|漪)支/eT/
+    - xform/(憂|逶)支/ueT/
     - xform/伊支/ieT/
     - xform/幽支/yeT/
     - xform/區模/ɔT/
@@ -454,8 +454,8 @@ middle_chinese_lookup:
     - xform/(醫|漪)廢/ɤTi/
     - xform/伊廢/ⁱɤTi/
     - xform/(憂|逶)廢/oTi/
-    - xform/漪祭/e̠Ti/
-    - xform/逶祭/ue̠Ti/
+    - xform/漪祭/eTi/
+    - xform/逶祭/ueTi/
     - xform/伊祭/ieTi/
     - xform/幽祭/yeTi/
     - xform/烏咍/ʌTi/
@@ -477,8 +477,8 @@ middle_chinese_lookup:
     - xform/幽真/ʸiTn/
     - xform/(醫|漪)元/ɤTn/
     - xform/(憂|逶)元/oTn/
-    - xform/漪仙/e̠Tn/
-    - xform/逶仙/ue̠Tn/
+    - xform/漪仙/eTn/
+    - xform/逶仙/ueTn/
     - xform/伊仙/ieTn/
     - xform/幽仙/yeTn/
     - xform/烏痕/ʌTn/
@@ -498,7 +498,7 @@ middle_chinese_lookup:
     - xform/醫嚴/ɤTm/
     - xform/伊嚴/ⁱɤTm/
     - xform/憂凡/oTm/
-    - xform/漪鹽/e̠Tm/
+    - xform/漪鹽/eTm/
     - xform/伊鹽/ieTm/
     - xform/烏覃/ʌTm/
     - xform/娃咸/ɹɛTm/
@@ -514,23 +514,21 @@ middle_chinese_lookup:
     - xform/(^|、)ⁱ/\1i/
     - xform/(^|、)ʸ/\1y/
 
-    - xform/ʊ/u̙/
-    - xform/ɛ/e̙/
-    - xform/ʌ/ɤ̙/
-    - xform/ɔ/o̙/
-    - xform/a/a̙/
-    - xform/ɑ/ɑ̙/
+    - "xform/ʊ/u\u0319/"
+    - "xform/ɛ/e\u0319/"
+    - "xform/ʌ/ɤ\u0319/"
+    - "xform/ɔ/o\u0319/"
+    - "xform/a/a\u0319/"
+    - "xform/ɑ/ɑ\u0319/"
     - xform/æ/a/
     - xform/ɐ/ɑ/
-    - "xform/\u0320//"
 
-    - xform/T([^T]*)平/̄\1/
-    - xform/T([^T]*)上/́\1/
-    - xform/T([^T]*)去/̀\1/
-    - xform/ɴ入/q̚/
-    - xform/ŋ入/k̚/
-    - xform/n入/t̚/
-    - xform/m入/p̚/
-    - "xform/\u031A//"
+    - "xform/T([^T]*)平/\u0304\\1/"
+    - "xform/T([^T]*)上/\u0301\\1/"
+    - "xform/T([^T]*)去/\u0300\\1/"
+    - "xform/ɴ入/q/"
+    - "xform/ŋ入/k/"
+    - "xform/n入/t/"
+    - "xform/m入/p/"
     - xform/T//
     - xform/、/, /
