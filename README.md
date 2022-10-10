@@ -17,4 +17,9 @@
 <li>以、云母爲零聲母，直接以元音開頭；零韻尾未列於表內；入聲以韻尾標記，不標調
 <li>元音6格中左上者3A、中上者3B、右上者3C，左下者4等、中下者2等、右下者1等</li></ol>
 <h3>Here lists all elements in the phonetics／現列出各標音元素：</h3>
-<p style="text-align:center;"><img src="middle_chinese.png" alt="Summary of syllables" style = "width: 50%; margin-left: auto; margin-right: auto;"></p>
+<p style="text-align:center;">
+<picture style = "width: 50%; margin-left: auto; margin-right: auto;">
+<source media="(prefers-color-scheme: dark)" srcset="middle_chinese_dark.png">
+<source media="(prefers-color-scheme: light)" srcset="middle_chinese.png">
+<img src="middle_chinese.png" alt="Summary of syllables">
+</picture></p>
