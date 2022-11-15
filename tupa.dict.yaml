@@ -1887,7 +1887,7 @@ import_tables:
 䋱	leoj
 䋵	lap
 䋵	qyejh
-䋷	mu
+䋷	mou
 䋷	myiw
 䋸	zwin
 䋻	nrim
@@ -1928,7 +1928,7 @@ import_tables:
 䍊	khek
 䍌	bou
 䍌	bouq
-䍌	bu
+䍌	bou
 䍍	khouh
 䍍	khouk
 䍍	pu
@@ -1937,7 +1937,7 @@ import_tables:
 䍐	hanh
 䍐	hanq
 䍔	kwaeng
-䍖	bu
+䍖	bou
 䍖	phaew
 䍘	mie
 䍙	moj
@@ -2916,7 +2916,7 @@ import_tables:
 䨑	dej
 䨒	uoh
 䨕	quo
-䨗	bu
+䨗	bou
 䨘	senh
 䨛	sreek
 䨞	uoq
@@ -3301,11 +3301,11 @@ import_tables:
 䱌	jy
 䱎	keongh
 䱏	thouq
-䱐	bu
+䱐	bou
 䱐	phuo
 䱒	qyop
 䱔	ju
-䱕	mu
+䱕	mou
 䱖	lu
 䱗	tshan
 䱚	luok
@@ -3375,7 +3375,7 @@ import_tables:
 䳐	tshih
 䳑	uq
 䳔	kuk
-䳕	bu
+䳕	bou
 䳖	nriep
 䳚	khajh
 䳚	khanh
@@ -3883,7 +3883,7 @@ import_tables:
 侐	hwih
 侑	uh
 侒	qan
-侔	mu
+侔	mou
 侖	lwin
 侗	doung
 侗	doungh
@@ -4628,7 +4628,7 @@ import_tables:
 劮	jit
 劵	khuonh
 効	ghaewh
-劺	mu
+劺	mou
 劻	khuang
 劼	kheet
 劾	gheojh	20%
@@ -5137,7 +5137,7 @@ import_tables:
 哏	gheon
 哐	khuang
 哚	twaq
-哞	mu
+哞	mou
 員	uen
 員	un	10%
 員	unh	10%
@@ -5165,7 +5165,7 @@ import_tables:
 哵	peet
 哶	miaeq
 哷	lwiet
-哹	bu
+哹	bou
 哹	pu
 哺	boh
 哼	haeng
@@ -5891,7 +5891,7 @@ import_tables:
 堤	tej
 堤	tejq
 堥	maw
-堥	mu
+堥	mou
 堦	keej
 堧	njwien
 堧	nwah
@@ -7743,7 +7743,7 @@ import_tables:
 恅	lawq
 恆	gheong
 恇	khuang
-恈	mu
+恈	mou
 恉	tjiq
 恌	jiew
 恌	thew
@@ -8568,7 +8568,7 @@ import_tables:
 掉	nroeuk	2%
 掊	baew
 掊	bou
-掊	bu
+掊	bou
 掊	pouq
 掌	tjyangq
 掍	ghonq
@@ -9615,7 +9615,7 @@ import_tables:
 枸	kou
 枸	kouq
 枸	kuoq
-枹	bu
+枹	bou
 枹	buo
 枹	paew
 枺	majh
@@ -9781,7 +9781,7 @@ import_tables:
 桯	theng
 桱	kengh
 桲	bot
-桴	bu
+桴	bou
 桴	phuo
 桵	njwi
 桶	doungq
@@ -9876,7 +9876,7 @@ import_tables:
 棒	boeungq
 棓	boeungq
 棓	boj
-棓	bu
+棓	bou
 棔	hon
 棕	tsoung
 棖	draeng
@@ -10620,7 +10620,7 @@ import_tables:
 毤	thwah
 毦	njyh
 毨	senq
-毪	mu
+毪	mou
 毫	ghaw
 毬	gu
 毭	douh
@@ -10996,7 +10996,7 @@ import_tables:
 浪	langh
 浬	lyq
 浭	kaeng
-浮	bu
+浮	bou
 浯	ngo
 浰	lenh
 浴	juok
@@ -11047,7 +11047,7 @@ import_tables:
 涖	lih
 涗	sjwiejh
 涘	zryq
-涪	bu
+涪	bou
 涫	kwan
 涫	kwanh
 涬	ghengq
@@ -11834,7 +11834,7 @@ import_tables:
 烠	ghoj
 烤	khawq
 烯	hyj
-烰	bu
+烰	bou
 烳	phoq
 烴	kengq
 烴	theng
@@ -12136,7 +12136,7 @@ import_tables:
 牛	ngu
 牝	binq
 牝	biq
-牟	mu
+牟	mou
 牠	tha
 牡	mouq
 牢	law
@@ -12529,7 +12529,7 @@ import_tables:
 理	lyq
 琇	juq
 琇	suh
-琈	bu
+琈	bou
 琉	lu
 琊	jiae
 琍	lih
@@ -13308,7 +13308,7 @@ import_tables:
 眵	tjie	2%
 眶	khuang
 眷	kuenh
-眸	mu
+眸	mou
 眹	drinq
 眺	thewh
 眻	jyang
@@ -13474,7 +13474,7 @@ import_tables:
 矗	tsrhuk
 矘	thangq
 矚	tjuok
-矛	mu
+矛	mou
 矜	kyng
 矞	jwit
 矟	sroeuk
@@ -14538,7 +14538,7 @@ import_tables:
 粧	tsryang
 粮	lyang
 粯	gheenh
-粰	bu
+粰	bou
 粱	lyang
 粲	tshanh
 粳	kaeng
@@ -14949,7 +14949,7 @@ import_tables:
 繄	qejh
 繅	saw
 繅	tsawq
-繆	mu
+繆	mou
 繆	muk
 繆	myiw
 繆	myiwh
@@ -15081,7 +15081,7 @@ import_tables:
 罔	muangq
 罕	hanh
 罕	hanq
-罘	bu
+罘	bou
 罛	ko
 罜	douk
 罜	tjuoh
@@ -15097,7 +15097,7 @@ import_tables:
 罤	dej
 罥	kwenh
 罥	kwenq
-罦	bu
+罦	bou
 罦	phuo
 罧	simq
 罧	sryimh
@@ -15837,7 +15837,7 @@ import_tables:
 舼	guong
 舽	boeung
 舾	sej
-艀	bu
+艀	bou
 艁	dzawq
 艁	tshawh
 艃	ly
@@ -15936,7 +15936,7 @@ import_tables:
 芝	tjy
 芟	sraem
 芡	gyemq
-芣	bu
+芣	bou
 芤	khou
 芥	keejh
 芧	dryoq
@@ -16979,7 +16979,7 @@ import_tables:
 蛉	leng
 蛋	danq
 蛐	khuok
-蛑	mu
+蛑	mou
 蛒	kaek
 蛓	tshieh
 蛓	tshyh
@@ -17041,7 +17041,7 @@ import_tables:
 蜇	triet
 蜈	ket
 蜈	ngo
-蜉	bu
+蜉	bou
 蜊	li
 蜋	lang
 蜋	lyang
@@ -17155,7 +17155,7 @@ import_tables:
 蝤	dzu
 蝤	tsu
 蝥	maew
-蝥	mu
+蝥	mou
 蝥	muo
 蝥	muoh
 蝦	ghae
@@ -17260,7 +17260,7 @@ import_tables:
 蟉	giw
 蟉	giwq
 蟉	liw
-蟊	mu
+蟊	mou
 蟋	sit
 蟋	sryit
 蟌	tshoung
@@ -18148,7 +18148,7 @@ import_tables:
 諽	kheek
 諾	nak
 諿	tship
-謀	mu
+謀	mou
 謁	qyot
 謂	ujh
 謄	deong
@@ -19829,7 +19829,7 @@ import_tables:
 鉗	gyem
 鉚	maewq
 鉛	jwien
-鉜	bu
+鉜	bou
 鉞	uot
 鉟	byi
 鉟	phyi
@@ -20062,7 +20062,7 @@ import_tables:
 鍧	hweeng
 鍨	gui
 鍩	nak
-鍪	mu
+鍪	mou
 鍫	tshiew
 鍬	tshiew
 鍭	ghou
@@ -20628,7 +20628,7 @@ import_tables:
 雺	mongh
 雺	mouh
 雺	moung
-雺	mu
+雺	mou
 電	denh
 需	suo
 霂	mouk
@@ -20791,7 +20791,7 @@ import_tables:
 鞨	ghat
 鞨	zjiet
 鞪	mouk
-鞪	mu
+鞪	mou
 鞫	kuk
 鞬	kyon
 鞭	pien
@@ -21966,7 +21966,7 @@ import_tables:
 鴻	ghoung
 鴻	ghoungq
 鴽	njyo
-鴾	mu
+鴾	mou
 鴿	kop
 鵀	njim
 鵀	njimh
@@ -22117,7 +22117,7 @@ import_tables:
 鷙	tjih
 鷚	giw
 鷚	luh
-鷚	mu
+鷚	mou
 鷚	myiw
 鷜	lou
 鷜	luo
@@ -22261,7 +22261,7 @@ import_tables:
 麮	khyoh
 麮	khyoq
 麯	khuk
-麰	mu
+麰	mou
 麱	phuo
 麳	leoj
 麴	khuk
@@ -23094,7 +23094,7 @@ import_tables:
 𡥀	pawq
 𡥆	hawh
 𡥈	kaewh
-𡦄	bu
+𡦄	bou
 𡦗	njuoh
 𡦳	haewh
 𡦼	njuongq
@@ -23256,7 +23256,7 @@ import_tables:
 𡿮	thot
 𡿯	uit
 𡿿	ghweok
-𢀼	bu
+𢀼	bou
 𢁁	troeuk
 𢁕	tewq
 𢁗	kanh
@@ -23564,7 +23564,7 @@ import_tables:
 𢦦	njung
 𢦩	djiaeng
 𢦭	jyk
-𢦵	mu
+𢦵	mou
 𢧀	kan
 𢧖	traet
 𢧤	drit
@@ -24898,7 +24898,7 @@ import_tables:
 𥯩	tjyak
 𥯮	juo
 𥯶	khoq
-𥰛	bu
+𥰛	bou
 𥰝	syk
 𥰠	lyoq
 𥰢	sjienh
@@ -25423,7 +25423,7 @@ import_tables:
 𦭲	gie
 𦭵	jyang
 𦭶	senq
-𦭷	mu
+𦭷	mou
 𦭺	kiw
 𦭼	biewq
 𦭿	jiae
@@ -25431,7 +25431,7 @@ import_tables:
 𦮌	kwen
 𦮶	munq
 𦮸	yq
-𦮹	bu
+𦮹	bou
 𦮺	si
 𦮻	kwen
 𦮾	nrip
@@ -26448,7 +26448,7 @@ import_tables:
 𨡩	phat
 𨡫	ghonq
 𨡭	mo
-𨡭	mu
+𨡭	mou
 𨡰	tsyangh
 𨢊	moung
 𨢌	lek
@@ -27051,7 +27051,7 @@ import_tables:
 𩭇	ly
 𩭓	tsu
 𩭩	toungh
-𩭾	mu
+𩭾	mou
 𩭿	nraet
 𩮀	tsoung
 𩮀	tsoungq
