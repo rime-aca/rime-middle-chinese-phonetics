@@ -260,8 +260,7 @@ middle_chinese_lookup:
     - xform/\x02(w?)aen\x03/\x02\12刪/
 
     # 脣鼻韻
-    - xform/P\x02(i|yi)m\x03/\x02\1B侵/
-    - xform/\x02(i|yi)m\x03/\x02\1C侵/
+    - xform/\x02(i|yi)m\x03/\x02\1B侵/
     - xform/\x02([iy])em\x03/\x02\1B鹽/
     - xform/\x02em\x03/\x024添/
     - xform/\x02eem\x03/\x022咸/
