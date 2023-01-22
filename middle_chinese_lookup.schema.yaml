@@ -210,6 +210,7 @@ middle_chinese_lookup:
     - xform/\x02(w?)eong\x03/\x02\1登/
     - xform/\x02(w?)eeng\x03/\x02\12耕/
     - xform/\x02(w?)eng\x03/\x02\14靑/
+    - xform/P\x02w?iaeng\x03/\x02wiB淸/
     - xform/\x02(w?i)aeng\x03/\x02\1B淸/
     - xform/\x02([yu])aeng\x03/\x02\1B庚/ #庚三
     - xform/\x02(w?)aeng\x03/\x02\12庚/ #庚二
@@ -221,6 +222,7 @@ middle_chinese_lookup:
     - xform/\x02(y)o\x03/\x02\1C魚/
     - xform/\x02(u)o\x03/\x02\1C虞/
     - xform/\x02o\x03/\x02w模/
+    - xform/P\x02ie\x03/\x02wiB支/
     - xform/\x02(w?[iyu])e\x03/\x02\1B支/
     - xform/\x02(w?)ee\x03/\x02\12佳/
     - xform/\x02(y)\x03/\x02\1C之/
@@ -235,8 +237,10 @@ middle_chinese_lookup:
     - xform/\x02aew\x03/\x022肴/
 
     # 收齒韻
+    - xform/P\x02i\x03/\x02wiB脂/
     - xform/\x02([wyu]?i)\x03/\x02\1B脂/
     - xform/\x02([yu])j\x03/\x02\1C微/
+    - xform/P\x02iej\x03/\x02wiB祭/
     - xform/\x02(w?[iyu])ej\x03/\x02\1B祭/
     - xform/\x02(w?)ej\x03/\x02\14齊/
     - xform/\x02(w?)eej\x03/\x02\12皆/
@@ -247,12 +251,14 @@ middle_chinese_lookup:
     - xform/\x02(w?)aej\x03/\x02\12夬/
 
     # 前鼻韻
+    - xform/P\x02in\x03/\x02wiB真/ #真
     - xform/\x02(w?i|[yu]i)n\x03/\x02\1B真/ #真臻
     - xform/\x02(y)n\x03/\x02\1C殷/
     - xform/\x02(u)n\x03/\x02\1C文/
     - xform/\x02([yu])on\x03/\x02\1C元/
     - xform/\x02on\x03/\x02w魂/
     - xform/\x02eon\x03/\x02痕/
+    - xform/P\x02ien\x03/\x02wiB仙/
     - xform/\x02(w?[iyu])en\x03/\x02\1B仙/
     - xform/\x02(w?)en\x03/\x02\14先/
     - xform/\x02(w?)een\x03/\x02\12山/
@@ -260,7 +266,8 @@ middle_chinese_lookup:
     - xform/\x02(w?)aen\x03/\x02\12刪/
 
     # 脣鼻韻
-    - xform/\x02(i|yi)m\x03/\x02\1B侵/
+    - xform/P\x02(i|yi)m\x03/\x02\1B侵/
+    - xform/\x02(i|yi)m\x03/\x02\1C侵/
     - xform/\x02([iy])em\x03/\x02\1B鹽/
     - xform/\x02em\x03/\x024添/
     - xform/\x02eem\x03/\x022咸/
@@ -303,13 +310,13 @@ middle_chinese_lookup:
 
     - xform/\s+/、/
 
-    - xform/幫(區|烏|娃|蛙|烓|翳)/pˁ\1/
+    - xform/幫(區|烏|娃|蛙|烓|翳)/p\1/
     - xform/幫(憂|醫|逶|漪|幽|伊)/p\1/
-    - xform/滂(區|烏|娃|蛙|烓|翳)/pˁʰ\1/
+    - xform/滂(區|烏|娃|蛙|烓|翳)/pʰ\1/
     - xform/滂(憂|醫|逶|漪|幽|伊)/pʰ\1/
-    - xform/並(區|烏|娃|蛙|烓|翳)/bˁ\1/
+    - xform/並(區|烏|娃|蛙|烓|翳)/b\1/
     - xform/並(憂|醫|逶|漪|幽|伊)/b\1/
-    - xform/明(區|烏|娃|蛙|烓|翳)/mˁ\1/
+    - xform/明(區|烏|娃|蛙|烓|翳)/m\1/
     - xform/明(憂|醫|逶|漪|幽|伊)/m\1/
     - xform/見(區|烏|娃|蛙|烓|翳)/q\1/
     - xform/見(憂|醫|逶|漪|幽|伊)/k\1/
@@ -319,170 +326,171 @@ middle_chinese_lookup:
     - xform/羣(憂|醫|逶|漪|幽|伊)/g\1/
     - xform/疑(區|烏|娃|蛙|烓|翳)/ɴ\1/
     - xform/疑(憂|醫|逶|漪|幽|伊)/ŋ\1/
-    - xform/曉(區|烏|娃|蛙|烓|翳)/χ\1/
+    - xform/曉(區|烏|娃|蛙|烓|翳)/x\1/
     - xform/曉(憂|醫|逶|漪|幽|伊)/x\1/
     - xform/匣(區|烏|娃|蛙|烓|翳)/ʁ\1/
-    - xform/匣(憂|醫|逶|漪|幽|伊)/ʁ\1/
-    - xform/影(區|烏|娃|蛙|烓|翳)/ʕ\1/
+    - xform/匣(憂|醫|逶|漪|幽|伊)/ɦ\1/
+    - xform/影(區|烏|娃|蛙|烓|翳)/ʔ\1/
     - xform/影(憂|醫|逶|漪|幽|伊)/ʔ\1/
     - xform/端/t/
-    - xform/知(娃|蛙|逶|漪)/ʈ\1/
-    - xform/章(幽|伊)/ʨ\1/
+    - xform/知(娃|蛙|逶|漪)/tɹ\1/
+    - xform/章(幽|伊)/c\1/
     - xform/透/tʰ/
-    - xform/徹(娃|蛙|逶|漪)/ʈʰ\1/
-    - xform/昌(幽|伊)/ʨʰ\1/
+    - xform/徹(娃|蛙|逶|漪)/tʰɹ\1/
+    - xform/昌(幽|伊)/cʰ\1/
     - xform/定/d/
-    - xform/澄(娃|蛙|逶|漪)/ɖ\1/
-    - xform/常(幽|伊)/ʥ\1/
+    - xform/澄(娃|蛙|逶|漪)/dɹ\1/
+    - xform/常(幽|伊)/ɟ\1/
     - xform/泥/n/
-    - xform/孃(娃|蛙|逶|漪)/ɳ\1/
+    - xform/孃(娃|蛙|逶|漪)/nɹ\1/
     - xform/日(幽|伊)/ɲ\1/
-    - xform/書(幽|伊)/ɕ\1/
-    - xform/船(幽|伊)/ʑ\1/
-    - xform/以(幽|伊)/i\1/
-    - xform/云(憂|醫|逶|漪|幽|伊)/u\1/
+    - xform/書(幽|伊)/ɬ\1/
+    - xform/船(幽|伊)/ɮ\1/
+    - xform/以(幽|伊)/ʎ\1/
+    - xform/云(憂|醫|逶|漪|幽|伊)/ɦ\1/
     - xform/精(區|烏|烓|翳)/ʦ\1/
-    - xform/精(幽|伊)/ʦⁱ\1/
+    - xform/精(幽|伊)/ʦ\1/
     - xform/莊(娃|蛙|逶|漪)/ꭧ\1/
+    - xform/莊/ꭧ\1/
     - xform/淸(區|烏|烓|翳)/ʦʰ\1/
-    - xform/淸(幽|伊)/ʦʰⁱ\1/
+    - xform/淸(幽|伊)/ʦʰ\1/
     - xform/初(娃|蛙|逶|漪)/ꭧʰ\1/
+    - xform/初/ꭧʰ\1/
     - xform/從(區|烏|烓|翳)/ʣ\1/
-    - xform/從(幽|伊)/ʣⁱ\1/
+    - xform/從(幽|伊)/ʣ\1/
     - xform/崇(娃|蛙|逶|漪)/ꭦ\1/
+    - xform/崇/ꭦ\1/
     - xform/心(區|烏|烓|翳)/s\1/
-    - xform/心(幽|伊)/sⁱ\1/
+    - xform/心(幽|伊)/s\1/
     - xform/生(娃|蛙|逶|漪)/ʂ\1/
-    - xform/邪(幽|伊)/zⁱ\1/
+    - xform/生/ʂ\1/
+    - xform/邪(幽|伊)/z\1/
     - xform/俟(逶|漪)/ʐ\1/
     - xform/來(區|烏|烓|翳)/l\1/
-    - xform/來(娃|蛙|逶|漪)/ɭ\1/
+    - xform/來(娃|蛙|逶|漪)/lɹ\1/
 
     - xform/(憂|逶|幽)尤/uT/
-    - xform/漪幽/ɹɨiTu/
+    - xform/漪幽/ɹiTu/
     - xform/伊幽/iTu/
     - xform/區侯/ɔuT/
-    - xform/漪宵/ɹɨeTu/
+    - xform/漪宵/ɹieTu/
     - xform/伊宵/ieTu/
     - xform/翳蕭/ɛeTu/
-    - xform/娃肴/ɹɜeTu/
+    - xform/娃肴/ɹɛeTu/
     - xform/烏豪/ʌɤTu/
 
     - xform/區東/ɔuTɴ/
     - xform/(憂|逶|幽)東/uTɴ/
     - xform/(憂|逶|幽)鐘/uoTɴ/
     - xform/區冬/ɔoTɴ/
-    - xform/蛙江/ɹɞoTɴ/
+    - xform/蛙江/ɹɔoTɴ/
     - xform/(醫|漪|伊)陽/ɯɑTɴ/
     - xform/(憂|逶|幽)陽/uɑTɴ/
     - xform/烏唐/ɑTɴ/
     - xform/區唐/ɔɑTɴ/
 
     - xform/(醫|伊)蒸/ɯTŋ/
-    - xform/憂蒸/uɯTŋ/
-    - xform/漪蒸/ɹɨɯTŋ/
-    - xform/逶蒸/ɹʉɯTŋ/
+    - xform/憂蒸/uTŋ/
+    - xform/漪蒸/ɹɯTŋ/
+    - xform/逶蒸/ɹuTŋ/
     - xform/翳靑/ɛeTŋ/
     - xform/烓靑/œeTŋ/
-    - xform/娃耕/ɹɜeTŋ/
-    - xform/蛙耕/ɹɞeTŋ/
+    - xform/娃耕/ɹɛeTŋ/
+    - xform/蛙耕/ɹœeTŋ/
     - xform/烏登/ʌɤTŋ/
     - xform/區登/ɔɤTŋ/
-    - xform/娃庚/ɹɜaTŋ/
-    - xform/蛙庚/ɹɞaTŋ/
-    - xform/(醫|漪)(庚|淸)/ɹɨaTŋ/
-    - xform/(憂|逶)(庚|淸)/ɹʉaTŋ/
+    - xform/娃庚/ɹaTŋ/
+    - xform/蛙庚/ɹœaTŋ/
+    - xform/(醫|漪)(庚|淸)/ɹiaTŋ/
+    - xform/(憂|逶)(庚|淸)/ɹyaTŋ/
     - xform/伊淸/iaTŋ/
     - xform/幽淸/yaTŋ/
 
     - xform/(醫|漪|伊)之/ɯT/
     - xform/(醫|漪|伊)魚/ɯɤT/
     - xform/(憂|逶|幽)虞/uoT/
-    - xform/(醫|漪)支/ɹɨeT/
-    - xform/(憂|逶)支/ɹʉeT/
+    - xform/(醫|漪)支/ɹieT/
+    - xform/(憂|逶)支/ɹyeT/
     - xform/伊支/ieT/
     - xform/幽支/yeT/
     - xform/區模/ɔoT/
-    - xform/娃佳/ɹɜeT/
-    - xform/蛙佳/ɹɞeT/
+    - xform/娃佳/ɹɛeT/
+    - xform/蛙佳/ɹœeT/
     - xform/伊麻/iaT/
     - xform/幽麻/yaT/
     - xform/(醫|漪)歌/ɯɑT/
     - xform/(憂|逶)歌/uɑT/
-    - xform/娃麻/ɹɜaT/
-    - xform/蛙麻/ɹɞaT/
+    - xform/娃麻/ɹaT/
+    - xform/蛙麻/ɹœaT/
     - xform/烏歌/ɑT/
     - xform/區歌/ɔɑT/
 
     - xform/(漪|醫)微/ɯTi/
     - xform/(逶|憂)微/uTi/
-    - xform/(漪|醫)脂/ɹɨiT/
-    - xform/(逶|憂)脂/ɹʉiT/
+    - xform/(漪|醫)脂/ɹiT/
+    - xform/(逶|憂)脂/ɹyiT/
     - xform/伊脂/iT/
     - xform/幽脂/yiT/
     - xform/(醫|漪|伊)廢/ɯɤTi/
     - xform/(憂|逶|幽)廢/uoTi/
-    - xform/漪祭/ɹɨeTi/
-    - xform/逶祭/ɹʉeTi/
+    - xform/漪祭/ɹieTi/
+    - xform/逶祭/ɹyeTi/
     - xform/伊祭/ieTi/
     - xform/幽祭/yeTi/
     - xform/烏咍/ʌɤTi/
     - xform/區灰/ɔoTi/
-    - xform/娃皆/ɹɜeTi/
-    - xform/蛙皆/ɹɞeTi/
+    - xform/娃皆/ɹɛeTi/
+    - xform/蛙皆/ɹœeTi/
     - xform/翳齊/ɛeTi/
     - xform/烓齊/œeTi/
     - xform/烏泰/ɑTi/
     - xform/區泰/ɔɑTi/
-    - xform/娃夬/ɹɜaTi/
-    - xform/蛙夬/ɹɞaTi/
+    - xform/娃夬/ɹaTi/
+    - xform/蛙夬/ɹœaTi/
 
     - xform/(醫|漪)殷/ɯTn/
     - xform/(憂|逶)文/uTn/
-    - xform/漪真/ɹɨiTn/
-    - xform/逶真/ɹʉiTn/
+    - xform/漪真/ɹiTn/
+    - xform/逶真/ɹyiTn/
     - xform/伊真/iTn/
     - xform/幽真/yiTn/
     - xform/(醫|漪)元/ɯɤTn/
     - xform/(憂|逶)元/uoTn/
-    - xform/漪仙/ɹɨeTn/
-    - xform/逶仙/ɹʉeTn/
+    - xform/漪仙/ɹieTn/
+    - xform/逶仙/ɹyeTn/
     - xform/伊仙/ieTn/
     - xform/幽仙/yeTn/
     - xform/烏痕/ʌɤTn/
     - xform/區魂/ɔoTn/
-    - xform/娃山/ɹɜeTn/
-    - xform/蛙山/ɹɞeTn/
+    - xform/娃山/ɹɛeTn/
+    - xform/蛙山/ɹœeTn/
     - xform/翳先/ɛeTn/
     - xform/烓先/œeTn/
     - xform/烏寒/ɑTn/
     - xform/區寒/ɔɑTn/
-    - xform/娃刪/ɹɜaTn/
-    - xform/蛙刪/ɹɞaTn/
+    - xform/娃刪/ɹaTn/
+    - xform/蛙刪/ɹœaTn/
 
-    - xform/漪侵/ɹɨiTm/
+    - xform/漪侵/ɹiTm/
     - xform/醫侵/ɯTm/
     - xform/伊侵/iTm/
     - xform/(醫|伊)嚴/ɯɤTm/
     - xform/憂凡/uoTm/
-    - xform/漪鹽/ɹɨeTm/
+    - xform/漪鹽/ɹieTm/
     - xform/伊鹽/ieTm/
     - xform/烏覃/ʌɤTm/
-    - xform/娃咸/ɹɜeTm/
+    - xform/娃咸/ɹɛeTm/
     - xform/翳添/ɛeTm/
     - xform/烏談/ɑTm/
-    - xform/娃銜/ɹɜaTm/
+    - xform/娃銜/ɹaTm/
 
-    - xform/ⁱ(ɹ)?(ⁱ|ʸ)/\2\1/
-    - xform/ⁱ(ɹ)?(ʉ|o|œ|ɞ|ɔ)/ʸ\1\2/
-    - xform/ⁱ(ɹ)?u([^T])/y\1\2/
-    - xform/(^|、|-)i(ɹ)?(i|ɨ|e)/\1\2\3/
-    - xform/(^|、|-)u(ɹ)?(u|ʉ|ɯ|ɨ)/\1\2\3/
-    - xform/(^|、|-)(iu|ʸ)([^T])/\1y\3/
-    - xform/(^|、|-)i(ɹ)?(y)/\1\2\3/
-    - xform/(^|、|-)i(ɹ)?(œ|ɔ)/\1y\2\3/
-    - "xform/ɹ(y)?(ɨ|ʉ|ɘ|ɵ|ɜ|ɞ)(T)?/\\1\\2\\3\u02DE/"
-    - xform/(ⁱ|ʸ)([iy])/\2/
+    - xform/(ɹ)+/\1/
+    - xform/(ꭧ|ꭧʰ|ꭦ|ʂ|ʐ)ɹ/\1/
+    - xform/(ꭧ|ꭧʰ|ꭦ|ʂ|ʐ)(ɹ)?(u|œ|ɔ)(i|e|a|ɑ)/\1ʷ\4/
+    - xform/(ꭧ|ꭧʰ|ꭦ|ʂ|ʐ)(ɹ)?(y)(e|a|ɑ)/\1ʷ\4/
+    - xform/(ꭧ|ꭧʰ|ꭦ|ʂ|ʐ)(ɹ)?(i|ɯ|ɛ|ʌ|u|œ|ɔ)([^T])/\1\4/
+    - xform/(ɹ)?(œ|ɔ)(a|ɑ)T/ʷ\1\3T/
+    - xform/((p|pʰ|b|m)ɹ|(ꭧ|ꭧʰ|ꭦ|ʂ|ʐ))iTm/\1ɯTm/
 
     - "xform/T([^T]*)平/\u0304\\1/"
     - "xform/T([^T]*)上/\u0301\\1/"

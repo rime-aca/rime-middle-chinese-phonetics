@@ -3180,7 +3180,7 @@ import_tables:
 䮋	liejh
 䮎	hyjh
 䮒	pho
-䮔	tjwie
+䮔	tswie
 䮔	tjwieq
 䮗	nganh
 䮙	uik
@@ -7194,9 +7194,6 @@ import_tables:
 己	kyq
 已	jyh	1%
 已	jyq	99%
-已	zyq
-巳	jyh	0%
-巳	jyq	0%
 巳	zyq
 巴	pae
 巵	tjie
@@ -12192,7 +12189,7 @@ import_tables:
 犗	kaejh
 犘	mae
 犙	som
-犙	sru
+犙	sriw
 犚	qujh
 犛	leoj
 犛	ly
@@ -19042,6 +19039,7 @@ import_tables:
 輢	qyeh
 輢	qyeq
 輣	baeng
+輣	beeng
 輤	tshenh
 輥	konq
 輦	lienq
