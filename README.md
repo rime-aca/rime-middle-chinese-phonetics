@@ -23,3 +23,4 @@
 <source media="(prefers-color-scheme: light)" srcset="middle_chinese.png">
 <img src="middle_chinese.png" alt="Summary of syllables">
 </picture></p>
+<p style="text-align:center;"><a href="syllable tables.pdf">Syllable Tables／擬音表</a></p>
